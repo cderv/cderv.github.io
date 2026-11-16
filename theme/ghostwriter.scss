@@ -3,11 +3,17 @@
 // Look modelled on the Ghostwriter theme (JollyGoodThemes; Hugo port by jbub)
 // used by cderv.rbind.io. Values follow its site.css unless noted.
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
 
 // Palette (overridden by ghostwriter-dark.scss)
+$gw-font-import: true !default;
+@if $gw-font-import {
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+}
+
 $gw-primary: #f03838 !default;
+$gw-on-primary: #fefefe !default;
 $gw-secondary: #303030 !default;
+$gw-block-hover: $gw-secondary !default;
 $gw-bg: #fefefe !default;
 $gw-text: #424242 !default;
 // Ghostwriter uses #aeadad for dates; darkened here to stay readable (WCAG AA).
@@ -52,7 +58,7 @@ $enable-shadows: false !default;
 
 @mixin gw-block {
   background: $gw-primary;
-  color: #fefefe;
+  color: $gw-on-primary;
   font-size: 14px;
   font-weight: 600;
   line-height: 19px;
@@ -130,8 +136,8 @@ body {
 
     &:hover,
     &:focus-visible {
-      background: $gw-secondary;
-      color: #fefefe;
+      background: $gw-block-hover;
+      color: $gw-on-primary;
     }
   }
 
@@ -183,8 +189,8 @@ body {
 
       &:hover,
       &:focus-visible {
-        background: $gw-secondary;
-        color: #fefefe;
+        background: $gw-block-hover;
+        color: $gw-on-primary;
       }
     }
   }
@@ -201,7 +207,7 @@ body {
 
       &:hover,
       &:focus-visible {
-        background: $gw-secondary;
+        background: $gw-block-hover;
       }
 
       .bi {
@@ -230,7 +236,7 @@ body {
 
       &:hover,
       &:focus-visible {
-        background: $gw-secondary;
+        background: $gw-block-hover;
       }
     }
 
@@ -241,7 +247,7 @@ body {
       svg {
         width: 16px;
         height: 16px;
-        color: #fefefe;
+        color: inherit;
       }
     }
 
@@ -694,7 +700,7 @@ main.content {
 
 .quarto-listing .pagination .active .page-link {
   background: $gw-primary;
-  color: #fefefe;
+  color: $gw-on-primary;
 }
 
 // ---------------------------------------------------------------- Footer
@@ -751,7 +757,7 @@ footer.footer {
     &:hover,
     &:focus-visible {
       background: #121212;
-      color: #fefefe;
+      color: $gw-on-primary;
     }
   }
 
@@ -765,7 +771,7 @@ footer.footer {
 
       &:hover,
       &:focus-visible {
-        color: #fefefe;
+        color: $gw-on-primary;
       }
     }
   }

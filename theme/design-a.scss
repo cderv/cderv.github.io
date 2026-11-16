@@ -1,0 +1,102 @@
+/*-- scss:defaults --*/
+// Design A, "Ghostwriter refreshed": same structure as ghostwriter.scss
+// (layered after it), new palette and typography.
+// - petrol accent instead of red, slate text on warm paper
+// - system font stack: no web font request
+// - titles in sentence case instead of all caps
+
+$gw-font-import: false !default;
+$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif !default;
+$font-family-monospace: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace !default;
+
+$gw-primary: #0f6b78 !default;
+$gw-secondary: #1f2a33 !default;
+$gw-bg: #fbfaf7 !default;
+$gw-text: #2b3640 !default;
+$gw-muted: #66727c !default;
+$gw-rule: #9aa5ad !default;
+$gw-strong-rule: #1f2a33 !default;
+$gw-hover-bg: #eef5f5 !default;
+$gw-code-bg: #efeee8 !default;
+$gw-pre-bg: #f3f2ed !default;
+$gw-pre-border: #dfddd3 !default;
+$gw-table-stripe: #f4f3ee !default;
+$gw-footer-bg: #1f2a33 !default;
+$gw-footer-text: #a9b4bc !default;
+$gw-selection-bg: #cfe8ea !default;
+
+/*-- scss:rules --*/
+
+#quarto-header .navbar-brand,
+footer.footer .gw-footer-title {
+  letter-spacing: 0.04em;
+}
+
+#quarto-header .navbar-nav.me-auto .nav-link {
+  letter-spacing: 0.06em;
+}
+
+// calmer title block: sentence case, tighter, thinner rule
+#title-block-header.quarto-title-block {
+  text-transform: none;
+  border-bottom-width: 3px;
+
+  h1.title {
+    font-size: 44px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    text-wrap: balance;
+  }
+
+  .subtitle,
+  .description {
+    color: $gw-muted;
+  }
+
+  .quarto-title-meta,
+  .quarto-title-meta .quarto-title-meta-heading,
+  .quarto-title-meta .quarto-title-meta-contents {
+    letter-spacing: 0.05em;
+  }
+}
+
+main.content {
+  h2,
+  h3,
+  h4 {
+    letter-spacing: -0.01em;
+  }
+
+  a:not(.listing-title):not(.anchorjs-link) {
+    text-decoration: underline;
+    text-decoration-color: rgba($gw-primary, 0.35);
+    text-underline-offset: 3px;
+
+    &:hover {
+      border-bottom: 0;
+      padding-bottom: 0;
+      text-decoration-color: $gw-primary;
+    }
+  }
+
+  blockquote {
+    border-left: 3px solid $gw-primary;
+  }
+}
+
+.quarto-listing-default .quarto-post .listing-date {
+  color: $gw-muted;
+}
+
+@media (max-width: 600px) {
+  #title-block-header.quarto-title-block h1.title {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 400px) {
+  #title-block-header.quarto-title-block h1.title {
+    font-size: 28px;
+  }
+}
