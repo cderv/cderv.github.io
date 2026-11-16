@@ -35,15 +35,13 @@ Source: talks inventory in Notion (16/11/2026).
   [RaukR 2026, Visby · Aug 10–11, 2026]{.gw-talk-meta}\
   [Workshop site](https://cderv.github.io/raukr-2026-quarto/)
 
-- **Des PDF sans frictions avec Typst et Quarto** (in French) [Tutorial]{.gw-talk-kind}\
-  [Rencontres R 2026, Nantes · June 2026 · with Maëlle Salmon]{.gw-talk-meta}\
-  [Materials](https://cderv.github.io/tuto-quarto-typst-rr-2026/)
-  <!-- TO CONFIRM: exact day (conference ran June 16–18, 2026). -->
-
 - **Enrichir Quarto avec les filtres Lua** (in French)\
-  [Rencontres R 2026, Nantes · June 2026]{.gw-talk-meta}\
+  [Rencontres R 2026, Nantes · Jun 17, 2026]{.gw-talk-meta}\
   [Slides](https://cderv-rr2026.share.connect.posit.cloud/) · English version: posit::conf(2025) talk below
-  <!-- TO CONFIRM: exact day (conference ran June 16–18, 2026). -->
+
+- **Des PDF sans frictions avec Typst et Quarto** (in French) [Tutorial]{.gw-talk-kind}\
+  [Rencontres R 2026, Nantes · Jun 16, 2026 · with Maëlle Salmon]{.gw-talk-meta}\
+  [Materials](https://cderv.github.io/tuto-quarto-typst-rr-2026/)
 
 ## 2025
 
@@ -52,13 +50,12 @@ Source: talks inventory in Notion (16/11/2026).
   [Slides](https://cderv.github.io/pydata-paris-2025-quarto-publish) · [Video](https://www.youtube.com/watch?v=0QIxdDJ8cKE)
 
 - **Beyond the Basics: Expanding Quarto's Capabilities with Lua**\
-  [posit::conf(2025) · September 2025]{.gw-talk-meta}\
+  [posit::conf(2025), Atlanta · Sep 17, 2025]{.gw-talk-meta}\
   [Slides](https://cderv.quarto.pub/posit-conf-2025-quarto-lua/) · [Video](https://www.youtube.com/watch?v=u9ev3mvC-p0)
 
 - **Quarto Documents: Branded Websites, Presentations, Dashboards, and PDFs with Quarto** [Workshop]{.gw-talk-kind}\
-  [posit::conf(2025), Atlanta · September 2025 · with Sara Altman, Isabella Velásquez and Gordon Woodhull]{.gw-talk-meta}\
+  [posit::conf(2025), Atlanta · Sep 16, 2025 · with Sara Altman, Isabella Velásquez and Gordon Woodhull]{.gw-talk-meta}\
   [Materials](https://posit-conf-2025.github.io/quarto-brand/materials/01-intro/slides.html)
-  <!-- TO CONFIRM: exact workshop day at posit::conf(2025). Placed after the talk only by guess. -->
 
 - **Introducing Quarto**\
   [RaukR 2025 · June 2025]{.gw-talk-meta}\
@@ -128,14 +125,12 @@ extensions part (role to confirm). Private repo rmd-to-quarto-workshop, notes on
   [Slides](https://meetup-rmd-style-business-report.netlify.app/) · [Video](https://www.youtube.com/watch?v=gQ9he9dyfGs)
 
 - **Extend the functionality of your R Markdown document**\
-  [useR! 2021 · July 2021]{.gw-talk-meta}\
-  [Slides](https://user2021-enhanced-rmd.netlify.app/)
-  <!-- TO CONFIRM: the old site page embedded a pre-recorded video (https://www.youtube-nocookie.com/embed/Kp68d85849o); the inventory lists no video. -->
+  [useR! 2021, online · Jul 8, 2021]{.gw-talk-meta}\
+  [Slides](https://user2021-enhanced-rmd.netlify.app/) · [Video](https://www.youtube.com/watch?v=Kp68d85849o)
 
 - **Boost Your R Markdown Skills**\
-  [RaukR 2021 · Jun 10, 2021]{.gw-talk-meta}\
+  [RaukR 2021, online · Jun 21, 2021]{.gw-talk-meta}\
   [Slides](https://raukr-boost-rmd-skills.netlify.app/)
-  <!-- TO CONFIRM: the old site page dated this talk 2021-06-21; the inventory says 2021-06-10. -->
 
 ## 2019
 
