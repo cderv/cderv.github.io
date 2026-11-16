@@ -1,0 +1,14 @@
+---
+title: "Quarto workshop (2 sessions)"
+subtitle: "RaukR 2026, Visby"
+date: 2026-08-10
+listing-item:
+  extra:
+    event: "RaukR 2026, Visby"
+    when: "Aug 10–11, 2026"
+    kind: "Workshop"
+---
+
+Workshop.
+
+[[Workshop site](https://cderv.github.io/raukr-2026-quarto/)]{.gw-talk-links}

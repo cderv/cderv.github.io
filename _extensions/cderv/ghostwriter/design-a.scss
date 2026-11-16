@@ -68,7 +68,7 @@ main.content {
     letter-spacing: -0.01em;
   }
 
-  a:not(.listing-title):not(.anchorjs-link) {
+  a:not(.listing-title):not(.anchorjs-link):not(.gw-talk-title) {
     text-decoration: underline;
     text-decoration-color: rgba($gw-primary, 0.35);
     text-underline-offset: 3px;

@@ -1,0 +1,29 @@
+---
+title: "Se démarquer avec les thèmes HTML Quarto"
+subtitle: "Rencontres R 2023"
+date: 2023-06-02
+date-format: "MMMM YYYY"
+listing-item:
+  extra:
+    event: "Rencontres R 2023"
+    when: "June 2023"
+    language: "in French"
+---
+
+<!-- Exact day unknown: the date only orders this talk after the tutorial; the page shows the month. -->
+
+In French.
+
+[[Slides](https://cderv.github.io/rr-2023-quarto-html-theming/) · [Video](https://www.youtube.com/watch?v=jX74EqLOPPA)]{.gw-talk-links}
+
+## Slides
+
+```{=html}
+<div class="gw-embed"><iframe src="https://cderv.github.io/rr-2023-quarto-html-theming/" title="Slides" loading="lazy" allowfullscreen></iframe></div>
+```
+
+## Video
+
+```{=html}
+<div class="gw-embed"><iframe src="https://www.youtube-nocookie.com/embed/jX74EqLOPPA" title="Video" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+```

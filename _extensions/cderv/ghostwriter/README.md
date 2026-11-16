@@ -88,6 +88,27 @@ website:
       [© 2026 Me]{.gw-footer-line}
 ```
 
+## Talks listing
+
+`talks.template` renders a list of talks for a `type: custom` listing: title
+with optional badges, an optional summary, and a "date · event" line, with the
+whole row clickable. Each talk is a page whose front matter supplies the
+values under `listing-item: extra:` (`when`, `event`, and optionally `kind`,
+`language`, `summary`):
+
+```yaml
+listing:
+  - id: talks-2025
+    type: custom
+    template: !str /_extensions/cderv/ghostwriter/talks.template
+    contents: "talks/2025-*/index.qmd"
+    sort: "date desc"
+```
+
+Give the template path the `!str` tag: q2 otherwise parses it as markdown and
+warns about the underscore. Talk pages can embed slides or a video in a 16:9
+box with a raw-HTML `<div class="gw-embed"><iframe ...></iframe></div>`.
+
 ## Limits
 
 - The theme has no styles for banner title blocks. Keep `title-block-banner`

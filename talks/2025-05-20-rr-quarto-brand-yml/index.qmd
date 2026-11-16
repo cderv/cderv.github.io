@@ -1,0 +1,20 @@
+---
+title: "Personnaliser ses documents Quarto avec `_brand.yml`"
+subtitle: "Rencontres R 2025"
+date: 2025-05-20
+listing-item:
+  extra:
+    event: "Rencontres R 2025"
+    when: "May 20, 2025"
+    language: "in French"
+---
+
+In French.
+
+[[Slides](https://cderv.github.io/rr2025-quarto-brand-yml/)]{.gw-talk-links}
+
+## Slides
+
+```{=html}
+<div class="gw-embed"><iframe src="https://cderv.github.io/rr2025-quarto-brand-yml/" title="Slides" loading="lazy" allowfullscreen></iframe></div>
+```

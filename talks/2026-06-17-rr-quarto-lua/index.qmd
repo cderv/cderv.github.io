@@ -1,0 +1,22 @@
+---
+title: "Enrichir Quarto avec les filtres Lua"
+subtitle: "Rencontres R 2026, Nantes"
+date: 2026-06-17
+listing-item:
+  extra:
+    event: "Rencontres R 2026, Nantes"
+    when: "Jun 17, 2026"
+    language: "in French"
+---
+
+In French.
+
+An English version of this talk was given at posit::conf(2025): [Beyond the Basics: Expanding Quarto's Capabilities with Lua](../2025-09-17-posit-conf-quarto-lua/index.qmd).
+
+[[Slides](https://cderv-rr2026.share.connect.posit.cloud/)]{.gw-talk-links}
+
+## Slides
+
+```{=html}
+<div class="gw-embed"><iframe src="https://cderv-rr2026.share.connect.posit.cloud/" title="Slides" loading="lazy" allowfullscreen></iframe></div>
+```

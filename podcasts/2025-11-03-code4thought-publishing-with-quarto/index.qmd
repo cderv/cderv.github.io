@@ -1,0 +1,22 @@
+---
+title: "Publishing with Quarto"
+subtitle: "Code 4 Thought podcast"
+date: 2025-11-03
+listing-item:
+  extra:
+    event: "Code 4 Thought podcast"
+    when: "Nov 3, 2025"
+    kind: "Podcast"
+---
+
+With Carlos Scheidegger and Gordon Woodhull.
+
+Recorded on Jun 10, 2025.
+
+[[Video](https://www.youtube.com/watch?v=Z4etzebLlLs)]{.gw-talk-links}
+
+## Video
+
+```{=html}
+<div class="gw-embed"><iframe src="https://www.youtube-nocookie.com/embed/Z4etzebLlLs" title="Video" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+```

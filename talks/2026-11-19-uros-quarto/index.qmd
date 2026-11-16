@@ -1,0 +1,16 @@
+---
+title: "Reproducible Statistical Publications with Quarto"
+subtitle: "uRos 2026, Paris"
+date: 2026-11-19
+listing-item:
+  extra:
+    event: "uRos 2026, Paris"
+    when: "Nov 19, 2026"
+    kind: "Upcoming"
+---
+
+<!-- TODO(Christophe): add the slides link (and embed) once the uros2026-quarto-intro repo is public. -->
+
+Upcoming.
+
+[[Example repository](https://github.com/cderv/uros2026-quarto-example)]{.gw-talk-links}

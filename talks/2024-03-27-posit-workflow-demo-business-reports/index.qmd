@@ -1,0 +1,17 @@
+---
+title: "How to build business reports with Quarto"
+subtitle: "Posit Workflow Demo (monthly Posit webinar)"
+date: 2024-03-27
+listing-item:
+  extra:
+    event: "Posit Workflow Demo (monthly Posit webinar)"
+    when: "Mar 27, 2024"
+---
+
+[[Demo page](https://quarto-examples.github.io/quarto-business-report) · [Example](https://github.com/quarto-examples/quarto-business-report) · [Posit page](https://posit.co/resources/videos/how-to-build-business-reports-with-quarto) · [Video](https://www.youtube.com/watch?v=Hl9TvhlzfV4) · [Q&A video](https://youtube.com/live/bqk75igHo8M)]{.gw-talk-links}
+
+## Video
+
+```{=html}
+<div class="gw-embed"><iframe src="https://www.youtube-nocookie.com/embed/Hl9TvhlzfV4" title="Video" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+```

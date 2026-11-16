@@ -1,0 +1,23 @@
+---
+title: "From Jupyter Notebook to Publish-Ready Report: Effortless Sharing with Quarto"
+subtitle: "PyData Paris 2025"
+date: 2025-09-30
+listing-item:
+  extra:
+    event: "PyData Paris 2025"
+    when: "Sep 30, 2025"
+---
+
+[[Slides](https://cderv.github.io/pydata-paris-2025-quarto-publish) · [Video](https://www.youtube.com/watch?v=0QIxdDJ8cKE)]{.gw-talk-links}
+
+## Slides
+
+```{=html}
+<div class="gw-embed"><iframe src="https://cderv.github.io/pydata-paris-2025-quarto-publish" title="Slides" loading="lazy" allowfullscreen></iframe></div>
+```
+
+## Video
+
+```{=html}
+<div class="gw-embed"><iframe src="https://www.youtube-nocookie.com/embed/0QIxdDJ8cKE" title="Video" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+```

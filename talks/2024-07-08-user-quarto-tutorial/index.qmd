@@ -1,0 +1,14 @@
+---
+title: "Quarto Essentials: Elevating Your Scientific Publications"
+subtitle: "useR! 2024, Salzburg"
+date: 2024-07-08
+listing-item:
+  extra:
+    event: "useR! 2024, Salzburg"
+    when: "Jul 8, 2024"
+    kind: "Tutorial"
+---
+
+Tutorial.
+
+[[Materials](https://cderv.github.io/user2024-tutorial-quarto/)]{.gw-talk-links}

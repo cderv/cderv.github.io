@@ -1,0 +1,23 @@
+---
+title: "Exploring Quarto Dashboard for impactful and visual communication"
+subtitle: "PyData Paris 2024"
+date: 2024-09-25
+listing-item:
+  extra:
+    event: "PyData Paris 2024"
+    when: "Sep 25, 2024"
+---
+
+[[Slides](https://cderv.github.io/pydata-paris-2024-quarto-dashboard/) · [Video](https://www.youtube.com/watch?v=7Bw-Dg_xAos)]{.gw-talk-links}
+
+## Slides
+
+```{=html}
+<div class="gw-embed"><iframe src="https://cderv.github.io/pydata-paris-2024-quarto-dashboard/" title="Slides" loading="lazy" allowfullscreen></iframe></div>
+```
+
+## Video
+
+```{=html}
+<div class="gw-embed"><iframe src="https://www.youtube-nocookie.com/embed/7Bw-Dg_xAos" title="Video" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+```

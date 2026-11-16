@@ -1,0 +1,20 @@
+---
+title: "Headless chrome automation with R"
+subtitle: "useR! 2019"
+date: 2019-07-12
+listing-item:
+  extra:
+    event: "useR! 2019"
+    when: "Jul 12, 2019"
+    kind: "Lightning talk"
+---
+
+Lightning talk.
+
+[[Slides](https://cderv.gitlab.io/user2019-crrri/)]{.gw-talk-links}
+
+## Slides
+
+```{=html}
+<div class="gw-embed"><iframe src="https://cderv.gitlab.io/user2019-crrri/" title="Slides" loading="lazy" allowfullscreen></iframe></div>
+```

@@ -598,8 +598,10 @@ main.content {
 }
 
 // ---------------------------------------------------------------- Talks
-// Hand-written list on talks.qmd: `::: {.gw-talks}` with one bullet per
-// talk (title / meta line / links), dotted separators like the post list.
+// talks.qmd: `::: {.gw-talks}` with one section per year, each holding a
+// custom listing rendered by talks.template (title, badges, optional
+// summary, "date · event" line). Dotted separators and a whole-row link,
+// like the post list. Talk pages: links row and 16:9 embeds.
 
 main.content .gw-talks {
   h2 {
@@ -612,52 +614,111 @@ main.content .gw-talks {
     margin-top: 0;
   }
 
-  ul {
-    list-style: none;
+  .anchorjs-link {
+    display: none;
+  }
+
+  .quarto-listing {
     margin: 0 0 20px;
     padding: 0;
   }
+}
 
-  li {
-    margin: 0;
-    padding: 16px 0;
-    border-bottom: 1px dotted $gw-rule;
-    line-height: 1.5;
-    overflow-wrap: anywhere;
+.gw-talk-list {
+  margin: 0;
+}
 
-    p {
-      line-height: 1.5;
-      margin: 0;
-    }
+.gw-talk-item {
+  position: relative;
+  margin: 0;
+  padding: 16px 8px;
+  border-bottom: 1px dotted $gw-rule;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  transition: background-color 0.15s ease;
 
-    strong {
-      font-size: 18px;
-    }
+  &:hover {
+    background-color: rgba($gw-primary, 0.04);
   }
 
-  .gw-talk-meta {
-    color: $gw-muted;
-    font-size: 15px;
+}
+
+main.content .gw-talk-item p {
+  line-height: 1.5;
+  margin: 0;
+}
+
+main.content a.gw-talk-title {
+  color: $gw-text;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: none;
+
+  // Stretch the title link over the whole row.
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
   }
 
-  .gw-talk-kind {
-    display: inline-block;
-    margin-left: 4px;
-    padding: 1px 6px;
-    border: 1px solid $gw-rule;
-    color: $gw-muted;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    vertical-align: 2px;
-    white-space: nowrap;
+  &:hover,
+  &:focus {
+    color: $gw-primary;
   }
+}
 
-  .gw-talk-upcoming {
-    border-color: $gw-primary;
-    background: $gw-primary;
-    color: $gw-on-primary;
+.gw-talk-summary {
+  display: block;
+  margin-top: 2px;
+}
+
+.gw-talk-meta {
+  color: $gw-muted;
+  font-size: 15px;
+}
+
+.gw-talk-kind,
+.gw-talk-lang {
+  display: inline-block;
+  margin-left: 4px;
+  padding: 1px 6px;
+  border: 1px solid $gw-rule;
+  color: $gw-muted;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  vertical-align: 2px;
+  white-space: nowrap;
+}
+
+.gw-talk-lang {
+  border-style: dashed;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.gw-talk-links {
+  display: block;
+  margin: 0 0 8px;
+  font-weight: 600;
+}
+
+.gw-embed {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 0 0 24px;
+  border: 1px solid $gw-rule;
+  background: $gw-rule;
+
+  iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
   }
 }
 

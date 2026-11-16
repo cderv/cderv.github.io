@@ -1,0 +1,11 @@
+---
+title: "Building a datalab service with RStudio products"
+subtitle: "RStudio roadshow (ThinkR)"
+date: 2019-06-06
+listing-item:
+  extra:
+    event: "RStudio roadshow (ThinkR)"
+    when: "Jun 6, 2019"
+---
+
+[[Slides on Speaker Deck](https://speakerdeck.com/cderv/building-a-datalab-service)]{.gw-talk-links}

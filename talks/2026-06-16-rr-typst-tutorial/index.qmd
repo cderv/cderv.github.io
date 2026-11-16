@@ -1,0 +1,15 @@
+---
+title: "Des PDF sans frictions avec Typst et Quarto"
+subtitle: "Rencontres R 2026, Nantes"
+date: 2026-06-16
+listing-item:
+  extra:
+    event: "Rencontres R 2026, Nantes"
+    when: "Jun 16, 2026"
+    kind: "Tutorial"
+    language: "in French"
+---
+
+Tutorial. In French. With Maëlle Salmon.
+
+[[Materials](https://cderv.github.io/tuto-quarto-typst-rr-2026/)]{.gw-talk-links}

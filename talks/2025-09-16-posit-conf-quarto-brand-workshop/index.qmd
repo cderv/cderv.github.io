@@ -1,0 +1,14 @@
+---
+title: "Quarto Documents: Branded Websites, Presentations, Dashboards, and PDFs with Quarto"
+subtitle: "posit::conf(2025), Atlanta"
+date: 2025-09-16
+listing-item:
+  extra:
+    event: "posit::conf(2025), Atlanta"
+    when: "Sep 16, 2025"
+    kind: "Workshop"
+---
+
+Workshop. With Sara Altman, Isabella Velásquez and Gordon Woodhull.
+
+[[Materials](https://posit-conf-2025.github.io/quarto-brand/materials/01-intro/slides.html)]{.gw-talk-links}

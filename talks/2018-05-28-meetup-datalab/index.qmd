@@ -1,0 +1,22 @@
+---
+title: "« Datalab » pour R - Partage d'expérience"
+subtitle: "Meetup R Addicts Paris"
+date: 2018-05-28
+listing-item:
+  extra:
+    event: "Meetup R Addicts Paris"
+    when: "May 28, 2018"
+    language: "in French"
+---
+
+<!-- Deck moves into this site under /presentations/ (see the presentations migration plan): update the links then. -->
+
+In French.
+
+[[Slides](https://cderv.github.io/presentations/MEETUPR-DATALAB)]{.gw-talk-links}
+
+## Slides
+
+```{=html}
+<div class="gw-embed"><iframe src="https://cderv.github.io/presentations/MEETUPR-DATALAB" title="Slides" loading="lazy" allowfullscreen></iframe></div>
+```

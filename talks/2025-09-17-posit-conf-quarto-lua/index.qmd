@@ -1,0 +1,25 @@
+---
+title: "Beyond the Basics: Expanding Quarto's Capabilities with Lua"
+subtitle: "posit::conf(2025), Atlanta"
+date: 2025-09-17
+listing-item:
+  extra:
+    event: "posit::conf(2025), Atlanta"
+    when: "Sep 17, 2025"
+---
+
+A French version was given at Rencontres R 2026: [Enrichir Quarto avec les filtres Lua](../2026-06-17-rr-quarto-lua/index.qmd).
+
+[[Slides](https://cderv.quarto.pub/posit-conf-2025-quarto-lua/) · [Video](https://www.youtube.com/watch?v=u9ev3mvC-p0)]{.gw-talk-links}
+
+## Slides
+
+```{=html}
+<div class="gw-embed"><iframe src="https://cderv.quarto.pub/posit-conf-2025-quarto-lua/" title="Slides" loading="lazy" allowfullscreen></iframe></div>
+```
+
+## Video
+
+```{=html}
+<div class="gw-embed"><iframe src="https://www.youtube-nocookie.com/embed/u9ev3mvC-p0" title="Video" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+```

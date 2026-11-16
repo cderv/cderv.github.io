@@ -1,0 +1,21 @@
+---
+title: "Boost Your R Markdown Skills"
+subtitle: "RaukR 2021, online"
+date: 2021-06-21
+description: "A talk about some recipes of the R Markdown Cookbook given online at raukr 2021"
+aliases:
+  - /talk/2021-raukr-boost-rmd/
+listing-item:
+  extra:
+    event: "RaukR 2021, online"
+    when: "Jun 21, 2021"
+    summary: "A talk about some recipes of the R Markdown Cookbook given online at raukr 2021"
+---
+
+[[Slides](https://raukr-boost-rmd-skills.netlify.app/)]{.gw-talk-links}
+
+## Slides
+
+```{=html}
+<div class="gw-embed"><iframe src="https://raukr-boost-rmd-skills.netlify.app/" title="Slides" loading="lazy" allowfullscreen></iframe></div>
+```

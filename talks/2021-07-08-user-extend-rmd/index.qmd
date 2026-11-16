@@ -1,0 +1,27 @@
+---
+title: "Extend the functionality of your R Markdown document"
+subtitle: "useR! 2021, online"
+date: 2021-07-08
+description: "A talk about R Markdown Cookbook given online at useR!2021"
+aliases:
+  - /talk/2021-user-extend-rmd/
+listing-item:
+  extra:
+    event: "useR! 2021, online"
+    when: "Jul 8, 2021"
+    summary: "A talk about R Markdown Cookbook given online at useR!2021"
+---
+
+[[Slides](https://user2021-enhanced-rmd.netlify.app/) · [Video](https://www.youtube.com/watch?v=Kp68d85849o)]{.gw-talk-links}
+
+## Slides
+
+```{=html}
+<div class="gw-embed"><iframe src="https://user2021-enhanced-rmd.netlify.app/" title="Slides" loading="lazy" allowfullscreen></iframe></div>
+```
+
+## Video
+
+```{=html}
+<div class="gw-embed"><iframe src="https://www.youtube-nocookie.com/embed/Kp68d85849o" title="Video" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+```

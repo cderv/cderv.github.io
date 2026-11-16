@@ -1,0 +1,19 @@
+---
+title: "Quarto - Elevating Rmd for Advanced Publishing"
+subtitle: "useR! 2024, Salzburg"
+date: 2024-07-10
+listing-item:
+  extra:
+    event: "useR! 2024, Salzburg"
+    when: "Jul 10, 2024"
+---
+
+<!-- TO CONFIRM: is the Posit video of 2024-09-05 (https://www.youtube.com/watch?v=8qR0wtJEDX4) the recording of this talk? Not linked until confirmed. -->
+
+[[Slides](https://cderv.github.io/user2024-quarto-talk/)]{.gw-talk-links}
+
+## Slides
+
+```{=html}
+<div class="gw-embed"><iframe src="https://cderv.github.io/user2024-quarto-talk/" title="Slides" loading="lazy" allowfullscreen></iframe></div>
+```

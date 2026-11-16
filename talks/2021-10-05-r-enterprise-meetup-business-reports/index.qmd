@@ -1,0 +1,27 @@
+---
+title: "Business Reports with R Markdown"
+subtitle: "R in Enterprise Meetup (RStudio)"
+date: 2021-10-05
+description: "A talk about theming of reports to fit with graphical guidelines"
+aliases:
+  - /talk/2021-meetup-style-rmd/
+listing-item:
+  extra:
+    event: "R in Enterprise Meetup (RStudio)"
+    when: "Oct 5, 2021"
+    summary: "A talk about theming of reports to fit with graphical guidelines"
+---
+
+[[Slides](https://meetup-rmd-style-business-report.netlify.app/) · [Video](https://www.youtube.com/watch?v=gQ9he9dyfGs)]{.gw-talk-links}
+
+## Slides
+
+```{=html}
+<div class="gw-embed"><iframe src="https://meetup-rmd-style-business-report.netlify.app/" title="Slides" loading="lazy" allowfullscreen></iframe></div>
+```
+
+## Video
+
+```{=html}
+<div class="gw-embed"><iframe src="https://www.youtube-nocookie.com/embed/gQ9he9dyfGs" title="Video" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+```

@@ -1,0 +1,18 @@
+$-- Talk list for a `type: custom` listing (see README, "Talks listing").
+$-- Each item reads custom fields from its page's `listing-item: extra:`:
+$-- `when` and `event` (shown on the meta line), and optional `kind`,
+$-- `language` and `summary`.
+::: {.list .gw-talk-list}
+$for(items)$
+::: {.gw-talk-item}
+[$it.title$]($it.path$){.gw-talk-title}$if(it.kind)$ [$it.kind$]{.gw-talk-kind}$endif$$if(it.language)$ [$it.language$]{.gw-talk-lang}$endif$
+
+$if(it.summary)$
+[$it.summary$]{.gw-talk-summary}
+
+$endif$
+[$if(it.when)$$it.when$$endif$$if(it.event)$ · $it.event$$endif$]{.gw-talk-meta}
+:::
+
+$endfor$
+:::

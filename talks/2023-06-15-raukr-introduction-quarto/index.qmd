@@ -1,0 +1,17 @@
+---
+title: "Introduction to Quarto"
+subtitle: "RaukR 2023"
+date: 2023-06-15
+listing-item:
+  extra:
+    event: "RaukR 2023"
+    when: "Jun 15, 2023"
+---
+
+[[Slides](https://cderv.github.io/raukr-2023-quarto/)]{.gw-talk-links}
+
+## Slides
+
+```{=html}
+<div class="gw-embed"><iframe src="https://cderv.github.io/raukr-2023-quarto/" title="Slides" loading="lazy" allowfullscreen></iframe></div>
+```
