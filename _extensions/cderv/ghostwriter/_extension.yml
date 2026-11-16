@@ -1,0 +1,25 @@
+title: Ghostwriter
+author: Christophe Dervieux
+version: 0.1.0
+contributes:
+  # Custom project type, named after this extension's directory.
+  # Use it with `project: type: ghostwriter` in _quarto.yml.
+  project:
+    project:
+      type: website
+    website:
+      # Default footer; a site replaces it by setting its own page-footer.
+      page-footer:
+        center: |
+          [[{{< meta website.title >}}](/index.html){.gw-footer-title} [↑](#){.gw-top aria-label="Back to top"}]{.gw-footer-brand}
+          [Built with [Quarto](https://quarto.org)]{.gw-footer-line}
+          [Layout inspired by the [Ghostwriter theme](https://github.com/roryg/ghostwriter) by JollyGoodThemes]{.gw-footer-line}
+    format:
+      html:
+        theme:
+          light: [default, ghostwriter.scss, design-a.scss]
+          dark: [default, ghostwriter.scss, design-a.scss, design-a-dark.scss]
+        respect-user-color-scheme: true
+        syntax-highlighting: github
+        date-format: "ddd, MMM D, YYYY"
+        title-block-banner: false
