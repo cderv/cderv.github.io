@@ -464,7 +464,7 @@ main.content {
   h5 { font-size: 16px; margin-bottom: 15px; }
   h6 { font-size: 14px; margin-bottom: 12px; }
 
-  a:not(.listing-title):not(.anchorjs-link):hover {
+  a:not(.listing-title):not(.anchorjs-link):not(.gw-talk-title):hover {
     border-bottom: 1px dotted $gw-primary;
     padding-bottom: 2px;
   }
@@ -635,10 +635,20 @@ main.content .gw-talks {
   border-bottom: 1px dotted $gw-rule;
   line-height: 1.5;
   overflow-wrap: anywhere;
-  transition: background-color 0.15s ease;
+  transition: padding 0.2s ease-in-out, background-color 0.2s ease-in-out;
 
-  &:hover {
-    background-color: rgba($gw-primary, 0.04);
+  // Same hover as the post list: tinted row, slight indent, title in accent.
+  &:hover,
+  &:focus-within {
+    background: $gw-hover-bg;
+    padding-left: 12px;
+    padding-right: 12px;
+
+    a.gw-talk-title {
+      color: $gw-primary;
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
   }
 
 }
