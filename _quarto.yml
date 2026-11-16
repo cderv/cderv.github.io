@@ -1,7 +1,5 @@
 project:
   type: website
-  resources:
-    - styles.css
 
 website:
   title: "Christophe Dervieux"
@@ -20,8 +18,17 @@ website:
         href: https://github.com/cderv
       - icon: rss
         href: index.xml
+  page-footer:
+    center: |
+      [[Christophe Dervieux](/index.html){.gw-footer-title} [↑](#){.gw-top aria-label="Back to top"}]{.gw-footer-brand}
+      [© 2026 Christophe Dervieux / Built with [Quarto](https://quarto.org)]{.gw-footer-line}
+      [Look inspired by the [Ghostwriter theme](https://github.com/roryg/ghostwriter) by JollyGoodThemes]{.gw-footer-line}
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme:
+      light: [default, theme/ghostwriter.scss]
+      dark: [default, theme/ghostwriter.scss, theme/ghostwriter-dark.scss]
+    respect-user-color-scheme: true
+    syntax-highlighting: github
+    date-format: "ddd, MMM D, YYYY"

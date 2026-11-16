@@ -1,0 +1,858 @@
+/*-- scss:defaults --*/
+// Ghostwriter-like theme for Quarto 2.
+// Look modelled on the Ghostwriter theme (JollyGoodThemes; Hugo port by jbub)
+// used by cderv.rbind.io. Values follow its site.css unless noted.
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+
+// Palette (overridden by ghostwriter-dark.scss)
+$gw-primary: #f03838 !default;
+$gw-secondary: #303030 !default;
+$gw-bg: #fefefe !default;
+$gw-text: #424242 !default;
+// Ghostwriter uses #aeadad for dates; darkened here to stay readable (WCAG AA).
+$gw-muted: #767676 !default;
+$gw-rule: $gw-secondary !default; // 1px dotted separators
+$gw-strong-rule: $gw-secondary !default; // 6px rule under titles
+$gw-hover-bg: #fcf5f5 !default;
+$gw-code-bg: #f1f0ea !default;
+$gw-pre-bg: #f0f0f0 !default;
+$gw-pre-border: #dddbcc !default;
+$gw-table-stripe: #f7f7f3 !default;
+$gw-footer-bg: $gw-secondary !default;
+$gw-footer-text: #a3a3a3 !default; // Ghostwriter: #656565 (too faint)
+$gw-selection-bg: #fff5b8 !default;
+$gw-selection-fg: #000 !default;
+$gw-width: 889px !default;
+
+// Bootstrap
+$font-family-sans-serif: "Open Sans", Arial, sans-serif !default;
+$font-size-root: 18px !default;
+$font-size-base: 1rem !default;
+$line-height-base: 1.5 !default;
+$body-bg: $gw-bg !default;
+$body-color: $gw-text !default;
+$link-color: $gw-primary !default;
+$link-hover-color: $gw-primary !default;
+$link-decoration: none !default;
+$headings-font-weight: 700 !default;
+$headings-margin-bottom: 20px !default;
+$h1-font-size: 26px !default;
+$h2-font-size: 24px !default;
+$h3-font-size: 20px !default;
+$h4-font-size: 18px !default;
+$h5-font-size: 16px !default;
+$h6-font-size: 14px !default;
+$code-bg: $gw-code-bg !default;
+$code-color: inherit !default;
+$border-radius: 3px !default;
+$enable-shadows: false !default;
+
+/*-- scss:rules --*/
+
+@mixin gw-block {
+  background: $gw-primary;
+  color: #fefefe;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  padding: 5px 10px 6px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 0;
+  border-radius: 0;
+}
+
+@mixin gw-square {
+  @include gw-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 31px;
+  height: 30px;
+  padding: 0;
+  font-size: 16px;
+}
+
+::selection {
+  background: $gw-selection-bg;
+  color: $gw-selection-fg;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  // the header is not fixed in this theme
+  padding-top: 0 !important;
+}
+
+// ---------------------------------------------------------------- Header
+// Centered red title block + square icon buttons, nav links underneath.
+
+#quarto-header {
+  position: static;
+  transform: none !important;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+
+  .navbar {
+    background: transparent;
+    padding: 40px 0 0;
+    box-shadow: none;
+    border: 0;
+    min-height: 0;
+  }
+
+  .navbar-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0 10px;
+    max-width: $gw-width;
+    padding: 0 15px;
+  }
+
+  .navbar-brand-container {
+    flex: 0 0 auto;
+    margin: 0 !important;
+    max-width: 100%;
+  }
+
+  .navbar-brand {
+    @include gw-block;
+    display: block;
+    margin: 0;
+    white-space: normal;
+    text-align: center;
+
+    &:hover,
+    &:focus-visible {
+      background: $gw-secondary;
+      color: #fefefe;
+    }
+  }
+
+  // Ghostwriter has no hamburger: links are always visible.
+  .navbar-toggler {
+    display: none;
+  }
+
+  .navbar-collapse {
+    display: contents !important;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 !important;
+  }
+
+  // page links (navbar "left")
+  .navbar-nav.me-auto {
+    order: 10;
+    flex: 0 0 100%;
+    justify-content: center;
+    margin: 28px 0 10px !important;
+
+    .nav-link {
+      color: $gw-primary;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 19px;
+      padding: 0;
+      margin: 0 10px;
+      text-transform: uppercase;
+
+      &:hover,
+      &:focus-visible {
+        color: $gw-text;
+      }
+    }
+  }
+
+  // icon links (navbar "right") become the red squares next to the title
+  .navbar-nav.ms-auto {
+    order: 2;
+    gap: 10px;
+
+    .nav-link {
+      @include gw-square;
+
+      &:hover,
+      &:focus-visible {
+        background: $gw-secondary;
+        color: #fefefe;
+      }
+    }
+  }
+
+  .quarto-navbar-tools {
+    order: 3;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+
+    .quarto-navigation-tool {
+      @include gw-square;
+      padding: 0 !important;
+
+      &:hover,
+      &:focus-visible {
+        background: $gw-secondary;
+      }
+
+      .bi {
+        color: inherit;
+      }
+    }
+  }
+
+  // search button: one more red square
+  #quarto-search {
+    order: 4;
+    margin: 0;
+    display: flex;
+
+    &:empty {
+      display: none;
+    }
+
+    .aa-Autocomplete {
+      display: flex;
+    }
+
+    .aa-DetachedSearchButton {
+      @include gw-square;
+      cursor: pointer;
+
+      &:hover,
+      &:focus-visible {
+        background: $gw-secondary;
+      }
+    }
+
+    .aa-DetachedSearchButtonIcon {
+      display: flex;
+      color: inherit;
+
+      svg {
+        width: 16px;
+        height: 16px;
+        color: #fefefe;
+      }
+    }
+
+    .aa-DetachedSearchButtonPlaceholder,
+    .aa-DetachedSearchButtonQuery {
+      display: none;
+    }
+  }
+}
+
+// ---------------------------------------------------------------- Layout
+// One centered column, 889px wide with 40px gutters (Ghostwriter .container
+// + .post-container).
+
+#quarto-content.quarto-container {
+  display: block;
+  flex: 1 0 auto;
+  width: 100%;
+  max-width: $gw-width;
+  margin: 0 auto;
+  padding: 0 40px 95px;
+
+  > main.content {
+    display: block;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+// ---------------------------------------------------------------- Title block
+
+#title-block-header.quarto-title-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 6px solid $gw-strong-rule;
+  margin: 0 0 20px;
+  padding: 0 0 20px;
+  text-align: center;
+  text-transform: uppercase;
+
+  .quarto-title {
+    display: contents;
+  }
+
+  h1.title {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 15px 0 !important;
+    opacity: 1;
+    overflow-wrap: break-word;
+    max-width: 100%;
+  }
+
+  .subtitle,
+  .description {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8;
+    margin: 0 0 30px;
+  }
+
+  // "Published Mon, Apr 25, 2022 by Author"
+  .quarto-title-meta {
+    order: 1;
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px 0.35em;
+    color: $gw-muted;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    margin: 10px 0 0;
+    max-width: 100%;
+
+    &:not(:has(*)) {
+      display: none;
+    }
+
+    > div {
+      display: flex;
+      gap: 0.35em;
+      order: 2;
+      white-space: nowrap;
+
+      &:has(.date) {
+        order: 1;
+      }
+
+      // the author entry: "Author" label becomes "by"
+      &:not(:has(.date)) .quarto-title-meta-heading {
+        font-size: 0;
+
+        &::before {
+          content: "by";
+          font-size: 14px;
+        }
+      }
+    }
+
+    .quarto-title-meta-heading,
+    .quarto-title-meta-contents {
+      font-size: 14px;
+      font-weight: 600;
+      color: inherit;
+      margin: 0;
+      padding: 0;
+      opacity: 1;
+      text-transform: uppercase;
+    }
+
+    p {
+      color: inherit;
+      margin: 0;
+      line-height: 1;
+    }
+  }
+
+  // categories, shown like Ghostwriter's "Tagged:" line
+  .quarto-categories {
+    order: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px 0.35em;
+    color: $gw-muted;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    margin: 14px 0 0;
+    text-transform: none;
+
+    &::before {
+      content: "Tagged:";
+      font-weight: 600;
+    }
+
+    .quarto-category {
+      border: 0;
+      border-radius: 0;
+      background: none;
+      color: inherit;
+      font-size: inherit;
+      padding: 0;
+      margin: 0;
+      opacity: 1;
+      text-transform: none;
+
+      &:not(:last-child)::after {
+        content: ",";
+      }
+    }
+  }
+
+  // short dotted rule closing the post header
+  &:has(.date)::after {
+    content: "";
+    order: 3;
+    width: 100px;
+    border-bottom: 1px dotted $gw-rule;
+    margin: 40px 0 0;
+  }
+}
+
+// ---------------------------------------------------------------- Content
+
+main.content {
+  p {
+    line-height: 1.8;
+    margin: 0 0 30px;
+  }
+
+  ul,
+  ol {
+    line-height: 1.4;
+    margin: 0 0 20px;
+
+    ul,
+    ol {
+      margin: 10px 0 0;
+    }
+
+    li {
+      margin: 0 0 2px;
+    }
+
+    p {
+      line-height: 1.4;
+      margin: 0 0 10px;
+    }
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    border: 0;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    opacity: 1;
+  }
+
+  h2 { font-size: 24px; }
+  h3 { font-size: 20px; }
+  h4 { font-size: 18px; margin-bottom: 18px; }
+  h5 { font-size: 16px; margin-bottom: 15px; }
+  h6 { font-size: 14px; margin-bottom: 12px; }
+
+  a:not(.listing-title):not(.anchorjs-link):hover {
+    border-bottom: 1px dotted $gw-primary;
+    padding-bottom: 2px;
+  }
+
+  blockquote {
+    border-left: 1px dotted $gw-primary;
+    margin: 40px 0;
+    padding: 5px 30px;
+    color: $gw-muted;
+    font-size: inherit;
+    font-style: italic;
+
+    p {
+      color: inherit;
+      margin: 0;
+    }
+
+    p + p {
+      margin-top: 20px;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  p > img:only-child,
+  .quarto-figure {
+    display: block;
+    margin: 40px 0;
+  }
+
+  .quarto-figure p {
+    margin: 0;
+  }
+
+  figcaption {
+    color: $gw-muted;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  hr {
+    border: 0;
+    border-bottom: 1px dotted $gw-rule;
+    margin: 45px 0;
+    opacity: 1;
+    height: 0;
+    background: none;
+  }
+
+  table {
+    width: 100%;
+    margin-bottom: 40px;
+    border: 0;
+    font-size: inherit;
+
+    thead,
+    tbody {
+      border: 0;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      border: 0;
+      background: none;
+      box-shadow: none;
+    }
+
+    th {
+      padding-top: 0;
+      text-align: left;
+    }
+
+    tr {
+      border: 0;
+      border-bottom: 1px dotted $gw-muted;
+    }
+
+    tbody > tr:nth-child(odd) > * {
+      background-color: $gw-table-stripe;
+    }
+  }
+}
+
+// ---------------------------------------------------------------- Code
+
+code {
+  background-color: $gw-code-bg;
+  border-radius: 4px;
+  color: inherit;
+  font-size: 90%;
+  padding: 2px 4px;
+}
+
+pre {
+  font-size: 16px;
+  line-height: 1.3;
+
+  code {
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    font-size: 0.9em;
+  }
+}
+
+main.content {
+  div.sourceCode,
+  pre:not(.sourceCode) {
+    background-color: $gw-pre-bg;
+    border: 1px solid $gw-pre-border;
+    border-radius: 3px;
+    margin: 0 0 20px;
+  }
+
+  pre:not(.sourceCode) {
+    padding: 10px;
+    overflow-x: auto;
+  }
+
+  div.sourceCode pre {
+    background: none;
+    border: 0;
+    margin: 0;
+    padding: 10px;
+    overflow-x: auto;
+  }
+}
+
+// ---------------------------------------------------------------- Post list
+// "Title / Published Mon, Apr 25, 2022", dotted separators, whole row
+// clickable.
+
+.quarto-listing.quarto-listing-container-default {
+  margin: 0;
+  padding: 0;
+}
+
+.quarto-listing-default {
+  margin: 0;
+
+  .anchorjs-link {
+    display: none;
+  }
+
+  .quarto-post {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 20px 5px;
+    border: 0;
+    border-bottom: 1px dotted $gw-rule !important;
+    font-size: 18px;
+    line-height: 1.4;
+    transition: padding 0.2s ease-in-out, background-color 0.2s ease-in-out;
+
+    &:hover,
+    &:focus-within {
+      background: $gw-hover-bg;
+      padding-left: 12px;
+      padding-right: 12px;
+
+      .listing-title {
+        color: $gw-primary;
+      }
+    }
+
+    .body,
+    .metadata {
+      display: inline;
+      margin: 0;
+      padding: 0;
+    }
+
+    .body h3,
+    .metadata p {
+      display: inline;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 18px;
+      font-family: inherit;
+      line-height: 1.4;
+    }
+
+    .body h3 {
+      font-weight: 700;
+    }
+
+    .listing-title {
+      color: $gw-text;
+      font-weight: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease-in-out;
+
+      // stretch the link over the whole row
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+      }
+    }
+
+    .listing-date {
+      color: $gw-text;
+
+      &::before {
+        content: "/ Published ";
+      }
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .quarto-listing-default .quarto-post,
+  .quarto-listing-default .quarto-post .listing-title {
+    transition: none;
+  }
+}
+
+.quarto-listing .pagination .page-link {
+  border: 0;
+  border-radius: 0;
+  color: $gw-primary;
+  background: none;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.quarto-listing .pagination .active .page-link {
+  background: $gw-primary;
+  color: #fefefe;
+}
+
+// ---------------------------------------------------------------- Footer
+
+footer.footer {
+  background: $gw-footer-bg;
+  color: $gw-footer-text;
+  border: 0;
+  margin: 0;
+  padding: 80px 10px 70px;
+  font-size: 14px;
+  line-height: 1.8;
+  text-align: center;
+  text-transform: uppercase;
+
+  .nav-footer {
+    background: transparent;
+    color: inherit;
+    display: block;
+    padding: 0;
+    margin: 0;
+    min-height: 0;
+  }
+
+  .nav-footer-left:empty,
+  .nav-footer-right:empty {
+    display: none;
+  }
+
+  .nav-footer-center {
+    display: block;
+    margin: 0;
+    padding: 0;
+    min-height: 0;
+  }
+
+  .gw-footer-brand {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 0 35px;
+  }
+
+  .gw-footer-title {
+    @include gw-block;
+  }
+
+  .gw-top {
+    @include gw-square;
+  }
+
+  .gw-footer-title,
+  .gw-top {
+    &:hover,
+    &:focus-visible {
+      background: #121212;
+      color: #fefefe;
+    }
+  }
+
+  .gw-footer-line {
+    display: block;
+
+    a {
+      color: inherit;
+      font-weight: 700;
+      text-decoration: none;
+
+      &:hover,
+      &:focus-visible {
+        color: #fefefe;
+      }
+    }
+  }
+}
+
+// ---------------------------------------------------------------- Small screens
+
+@media (max-width: 600px) {
+  #quarto-header {
+    .navbar-brand-container {
+      flex: 0 0 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 8px !important;
+    }
+
+    .navbar-nav.me-auto {
+      flex-direction: column;
+      align-items: center;
+      margin: 20px 0 5px !important;
+
+      .nav-link {
+        margin: 0 0 15px;
+      }
+    }
+  }
+
+  #quarto-content.quarto-container {
+    padding: 0 25px 50px;
+  }
+
+  #title-block-header.quarto-title-block {
+    h1.title {
+      font-size: 42px;
+      margin-top: 5px !important;
+    }
+
+    &:has(.date)::after {
+      margin-top: 30px;
+    }
+  }
+
+  main.content {
+    p {
+      margin-bottom: 20px;
+    }
+
+    blockquote,
+    p > img:only-child,
+    .quarto-figure {
+      margin: 30px 0;
+    }
+
+    hr {
+      margin: 35px 0;
+    }
+  }
+
+  .quarto-listing-default .quarto-post {
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    .body h3 {
+      display: block;
+    }
+
+    .listing-date::before {
+      content: "Published ";
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  #quarto-content.quarto-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #title-block-header.quarto-title-block {
+    h1.title {
+      font-size: 30px;
+      line-height: 1.2;
+    }
+
+    .quarto-title-meta,
+    .quarto-categories {
+      line-height: 1.6;
+    }
+  }
+}

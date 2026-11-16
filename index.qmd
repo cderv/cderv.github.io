@@ -1,13 +1,14 @@
 ---
 title: "Blog"
+subtitle: "Notes on Quarto, R Markdown, and working with AI agents."
 listing:
   contents: posts
   feed: true
   sort: "date desc"
   type: default
-  categories: true
+  fields: [title, date]
+  date-format: "ddd, MMM D, YYYY"
+  categories: false
   sort-ui: false
   filter-ui: false
-page-layout: full
-title-block-banner: true
 ---

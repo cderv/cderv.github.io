@@ -1,4 +1,4 @@
 # options specified here will apply to all posts in this folder
 
-# Enable banner style title blocks
-title-block-banner: true
+# Ghostwriter look: plain centered title block (styled in theme/ghostwriter.scss)
+title-block-banner: false
