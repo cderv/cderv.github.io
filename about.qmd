@@ -10,5 +10,5 @@ Before Posit, I spent nine years at RTE, the French electricity transmission ope
 
 These days I write most of my code with AI agents, on Windows, and I spend a fair amount of time making agent tooling work well there.
 
-I live in Rennes, France. The best way to reach me is Bluesky or LinkedIn.
+I live in France. The best way to reach me is Bluesky or LinkedIn.
 <!-- TODO(Christophe): add the Bluesky and LinkedIn profile links. -->
