@@ -1,5 +1,166 @@
 ---
 title: "Talks"
+subtitle: "Talks, workshops and tutorials, mostly about Quarto and R Markdown."
+aliases:
+  # Old Hugo site (permalink `talk: /talk/:filename/`, URLs lowercased by Hugo)
+  - /talk/
+  - /talk/2021-meetup-style-rmd/
+  - /talk/2021-raukr-boost-rmd/
+  - /talk/2021-user-extend-rmd/
+  - /talk/2022-raukr-rmd-skills/
+  - /talk/2022-user-knitr-engines/
 ---
 
-Talks list goes here (step 4 of the plan).
+<!--
+How to add a talk: copy one list item into the right year, newest first.
+
+- **Title** [Workshop]{.gw-talk-kind}\
+  [Event, City · Mon D, YYYY]{.gw-talk-meta}\
+  [Slides](https://...) · [Video](https://...)
+
+Kind labels: Workshop, Tutorial, Lightning talk (plain talks have none).
+Source: talks inventory in Notion (16/11/2026).
+-->
+
+::: {.gw-talks}
+
+## 2026
+
+- **Reproducible Statistical Publications with Quarto** [Upcoming]{.gw-talk-kind .gw-talk-upcoming}\
+  [uRos 2026, Paris · Nov 19, 2026]{.gw-talk-meta}\
+  [Example repository](https://github.com/cderv/uros2026-quarto-example)
+  <!-- TODO(Christophe): add the slides link once the uros2026-quarto-intro repo is public. -->
+
+- **Quarto workshop (2 sessions)** [Workshop]{.gw-talk-kind}\
+  [RaukR 2026, Visby · Aug 10–11, 2026]{.gw-talk-meta}\
+  [Workshop site](https://cderv.github.io/raukr-2026-quarto/)
+
+- **Des PDF sans frictions avec Typst et Quarto** (in French) [Tutorial]{.gw-talk-kind}\
+  [Rencontres R 2026, Nantes · June 2026 · with Maëlle Salmon]{.gw-talk-meta}\
+  [Materials](https://cderv.github.io/tuto-quarto-typst-rr-2026/)
+  <!-- TO CONFIRM: exact day (conference ran June 16–18, 2026). -->
+
+- **Enrichir Quarto avec les filtres Lua** (in French)\
+  [Rencontres R 2026, Nantes · June 2026]{.gw-talk-meta}\
+  [Slides](https://cderv-rr2026.share.connect.posit.cloud/) · English version: posit::conf(2025) talk below
+  <!-- TO CONFIRM: exact day (conference ran June 16–18, 2026). -->
+
+## 2025
+
+- **From Jupyter Notebook to Publish-Ready Report: Effortless Sharing with Quarto**\
+  [PyData Paris 2025 · Sep 30, 2025]{.gw-talk-meta}\
+  [Slides](https://cderv.github.io/pydata-paris-2025-quarto-publish) · [Video](https://www.youtube.com/watch?v=0QIxdDJ8cKE)
+
+- **Beyond the Basics: Expanding Quarto's Capabilities with Lua**\
+  [posit::conf(2025) · September 2025]{.gw-talk-meta}\
+  [Slides](https://cderv.quarto.pub/posit-conf-2025-quarto-lua/) · [Video](https://www.youtube.com/watch?v=u9ev3mvC-p0)
+
+- **Quarto Documents: Branded Websites, Presentations, Dashboards, and PDFs with Quarto** [Workshop]{.gw-talk-kind}\
+  [posit::conf(2025), Atlanta · September 2025 · with Sara Altman, Isabella Velásquez and Gordon Woodhull]{.gw-talk-meta}\
+  [Materials](https://posit-conf-2025.github.io/quarto-brand/materials/01-intro/slides.html)
+  <!-- TO CONFIRM: exact workshop day at posit::conf(2025). Placed after the talk only by guess. -->
+
+- **Introducing Quarto**\
+  [RaukR 2025 · June 2025]{.gw-talk-meta}\
+  [Slides](https://cderv.github.io/raukr-2025-quarto)
+
+- **Personnaliser ses documents Quarto avec \_brand.yml** (in French)\
+  [Rencontres R 2025 · May 20, 2025]{.gw-talk-meta}\
+  [Slides](https://cderv.github.io/rr2025-quarto-brand-yml/)
+
+## 2024
+
+- **Exploring Quarto Dashboard for impactful and visual communication**\
+  [PyData Paris 2024 · Sep 25, 2024]{.gw-talk-meta}\
+  [Slides](https://cderv.github.io/pydata-paris-2024-quarto-dashboard/) · [Video](https://www.youtube.com/watch?v=7Bw-Dg_xAos)
+
+- **Quarto - Elevating Rmd for Advanced Publishing**\
+  [useR! 2024, Salzburg · Jul 10, 2024]{.gw-talk-meta}\
+  [Slides](https://cderv.github.io/user2024-quarto-talk/)
+  <!-- TO CONFIRM: is the Posit video of 2024-09-05 (https://www.youtube.com/watch?v=8qR0wtJEDX4) the recording of this talk? Not linked until confirmed. -->
+
+- **Quarto Essentials: Elevating Your Scientific Publications** [Tutorial]{.gw-talk-kind}\
+  [useR! 2024, Salzburg · Jul 8, 2024]{.gw-talk-meta}\
+  [Materials](https://cderv.github.io/user2024-tutorial-quarto/)
+
+- **How to build business reports with Quarto**\
+  [Posit Workflow Demo (monthly Posit webinar) · Mar 27, 2024]{.gw-talk-meta}\
+  [Demo page](https://quarto-examples.github.io/quarto-business-report) · [Example](https://github.com/quarto-examples/quarto-business-report) · [Posit page](https://posit.co/resources/videos/how-to-build-business-reports-with-quarto) · [Video](https://www.youtube.com/watch?v=Hl9TvhlzfV4) · [Q&A video](https://youtube.com/live/bqk75igHo8M)
+
+<!--
+LEFT OUT, event unknown: « Quarto et l'évolution par rapport à R Markdown » (in French), May 2, 2024,
+slides https://cderv.github.io/2024-quarto-evolution-rmd/ . Add it between the useR! 2024 tutorial and the Workflow Demo once the event is known.
+-->
+
+## 2023
+
+- **Introduction to Quarto**\
+  [RaukR 2023 · Jun 15, 2023]{.gw-talk-meta}\
+  [Slides](https://cderv.github.io/raukr-2023-quarto/)
+
+- **Se démarquer avec les thèmes HTML Quarto** (in French)\
+  [Rencontres R 2023 · June 2023]{.gw-talk-meta}\
+  [Slides](https://cderv.github.io/rr-2023-quarto-html-theming/) · [Video](https://www.youtube.com/watch?v=jX74EqLOPPA)
+
+- **Tutoriel Quarto** (in French) [Tutorial]{.gw-talk-kind}\
+  [Rencontres R 2023 · June 2023]{.gw-talk-meta}\
+  [Materials](https://cderv.quarto.pub/tuto-quarto-rr2023)
+
+## 2022
+
+<!--
+LEFT OUT, to confirm: rstudio::conf(2022), Washington, Jul 26, 2022 — R Markdown to Quarto workshop,
+extensions part (role to confirm). Private repo rmd-to-quarto-workshop, notes only.
+-->
+
+- **A tour of \{knitr\} engines**\
+  [useR! 2022 · Jun 22, 2022]{.gw-talk-meta}\
+  [Slides](https://user2022-knitr-engines.netlify.app/)
+
+- **Improve your R Markdown skills!**\
+  [RaukR 2022 · June 2022]{.gw-talk-meta}\
+  [Slides](https://raukr-2022-rmd-skills.netlify.app)
+
+## 2021
+
+- **Business Reports with R Markdown**\
+  [R Enterprise Meetup (RStudio) · October 2021]{.gw-talk-meta}\
+  [Slides](https://meetup-rmd-style-business-report.netlify.app/) · [Video](https://www.youtube.com/watch?v=gQ9he9dyfGs)
+
+- **Extend the functionality of your R Markdown document**\
+  [useR! 2021 · July 2021]{.gw-talk-meta}\
+  [Slides](https://user2021-enhanced-rmd.netlify.app/)
+  <!-- TO CONFIRM: the old site page embedded a pre-recorded video (https://www.youtube-nocookie.com/embed/Kp68d85849o); the inventory lists no video. -->
+
+- **Boost Your R Markdown Skills**\
+  [RaukR 2021 · Jun 10, 2021]{.gw-talk-meta}\
+  [Slides](https://raukr-boost-rmd-skills.netlify.app/)
+  <!-- TO CONFIRM: the old site page dated this talk 2021-06-21; the inventory says 2021-06-10. -->
+
+## 2019
+
+- **Headless chrome automation with R** [Lightning talk]{.gw-talk-kind}\
+  [useR! 2019 · Jul 12, 2019]{.gw-talk-meta}\
+  [Slides](https://cderv.gitlab.io/user2019-crrri/)
+
+- **Building a datalab service with RStudio products**\
+  [RStudio roadshow (ThinkR) · Jun 6, 2019]{.gw-talk-meta}\
+  [Slides on Speaker Deck](https://speakerdeck.com/cderv/building-a-datalab-service)
+
+- **PDF publication with pagedown**\
+  [Meetup R Addicts Paris · Apr 18, 2019]{.gw-talk-meta}\
+  [Slides](https://cderv.github.io/presentations/meetupr-pagedown)
+
+## 2018
+
+- **« Datalab » pour R - Partage d'expérience** (in French)\
+  [Meetup R Addicts Paris · May 28, 2018]{.gw-talk-meta}\
+  [Slides](https://cderv.github.io/presentations/MEETUPR-DATALAB)
+
+## Podcasts & interviews {#podcasts}
+
+- **Publishing with Quarto**\
+  [Code 4 Thought podcast · Nov 3, 2025 (recorded Jun 10, 2025) · with Carlos Scheidegger and Gordon Woodhull]{.gw-talk-meta}\
+  [Video](https://www.youtube.com/watch?v=Z4etzebLlLs)
+
+:::

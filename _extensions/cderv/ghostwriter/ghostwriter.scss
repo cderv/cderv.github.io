@@ -597,6 +597,70 @@ main.content {
   }
 }
 
+// ---------------------------------------------------------------- Talks
+// Hand-written list on talks.qmd: `::: {.gw-talks}` with one bullet per
+// talk (title / meta line / links), dotted separators like the post list.
+
+main.content .gw-talks {
+  h2 {
+    margin: 40px 0 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid $gw-strong-rule;
+  }
+
+  > h2:first-child {
+    margin-top: 0;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0 0 20px;
+    padding: 0;
+  }
+
+  li {
+    margin: 0;
+    padding: 16px 0;
+    border-bottom: 1px dotted $gw-rule;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+
+    p {
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    strong {
+      font-size: 18px;
+    }
+  }
+
+  .gw-talk-meta {
+    color: $gw-muted;
+    font-size: 15px;
+  }
+
+  .gw-talk-kind {
+    display: inline-block;
+    margin-left: 4px;
+    padding: 1px 6px;
+    border: 1px solid $gw-rule;
+    color: $gw-muted;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    vertical-align: 2px;
+    white-space: nowrap;
+  }
+
+  .gw-talk-upcoming {
+    border-color: $gw-primary;
+    background: $gw-primary;
+    color: $gw-on-primary;
+  }
+}
+
 // ---------------------------------------------------------------- Post list
 // "Title / Published Mon, Apr 25, 2022", dotted separators, whole row
 // clickable.
