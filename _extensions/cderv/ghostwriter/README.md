@@ -1,9 +1,14 @@
 # Ghostwriter for Quarto 2
 
-A blog theme for [q2](https://github.com/quarto-dev/q2) (Quarto 2) websites:
-centered header with boxed navigation, a plain one-line post listing, a strong
-rule under titles, and light and dark palettes that follow the reader's
-system preference.
+A Quarto port of the [Ghostwriter](https://github.com/roryg/ghostwriter) theme
+by Rory Gibson, for [q2](https://github.com/quarto-dev/q2) (Quarto 2) websites.
+It keeps the original layout: centered header with boxed navigation, a plain
+one-line post listing, and a strong rule under titles.
+
+The default look is a variant of the original, with a petrol palette, a system
+font stack, and a dark mode that follows the reader's system preference. The
+original look (red accent, Open Sans) is still available; see
+[Original look](#original-look).
 
 It is packaged as a custom project type built on `website`.
 
@@ -116,13 +121,27 @@ The dark palette in `design-a-dark.scss` assigns its variables without
 `!default`, so it cannot be overridden this way; replace the `dark` list with
 `!prefer` and your own palette file instead.
 
+## Original look
+
 `ghostwriter.scss` alone gives the original look (red accent, Open Sans loaded
-from Google Fonts). `design-a.scss` layers a petrol palette and a system font
-stack on top of it.
+from Google Fonts). `design-a.scss` layers the default variant on top of it.
+To use the original look, replace both theme lists with `!prefer`:
 
-## Credits
+```yaml
+format:
+  html:
+    theme:
+      light: !prefer [default, _extensions/cderv/ghostwriter/ghostwriter.scss]
+      dark: !prefer [default, _extensions/cderv/ghostwriter/ghostwriter.scss]
+```
 
-The layout follows the [Ghostwriter](https://github.com/roryg/ghostwriter)
-theme for Ghost by Rory Gibson (JollyGoodThemes), as ported to Hugo by
+The original theme has no dark palette, so both lists use the same file.
+
+## Credits and license
+
+This extension is a port of the [Ghostwriter](https://github.com/roryg/ghostwriter)
+theme for Ghost by Rory Gibson (JollyGoodThemes), drawing on its Hugo port by
 [jbub](https://github.com/jbub/ghostwriter). Ghostwriter is released under the
 MIT License; its notice is in [LICENSE-ghostwriter.md](LICENSE-ghostwriter.md).
+
+The extension itself is released under the MIT License; see [LICENSE](LICENSE).
