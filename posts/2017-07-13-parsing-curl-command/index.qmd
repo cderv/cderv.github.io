@@ -1,0 +1,64 @@
+---
+title: "Parsing curl command"
+date: 2017-07-13
+draft: true
+aliases: ["/2017/07/13/parsing-curl-command/"]
+---
+
+<!--
+Ported from the Hugo/blogdown blog. The original index.Rmd was written in
+knitr::spin() style (#' roxygen comments for prose) and was a draft that was
+never rendered, so there is no output to recover. Code is shown as static
+blocks and is not executed.
+-->
+
+::: {.callout-warning}
+TODO: this draft was never rendered on the old blog, so no output is available. The code below is shown without its results.
+:::
+
+When working with curl command, there is a great helper package call `curlconverter`.
+It is on [github](https://github.com/hrbrmstr/curlconverter)
+
+It can parse a curl command in a list useable for helping make a request.
+You have to manually use the parsed command for `RCurl` but you can through this package
+create a request for use with `httr` package.
+
+Here is how you can do that
+
+```r
+# you have to install from github:
+# devtools::install_github("hrbrmstr/curlconverter")#
+library(curlconverter)
+```
+
+I need to change some `"` and `'` to make this work but here is your example curl command
+
+```r
+curl_cmd <- "curl -v -X PUT -H 'X-IBM-Client-Secret:YOUR_CLIENT_SECRET' -H 'X-IBM-Client-Id:YOUR_CLIENT_ID' -H 'Content-Type: application/json' -d '{'clientName': 'The Sample Outdoors Company', 'redirectURIs': 'https://example.com:5443', 'ownerName': 'John Smith', 'ownerEmail': 'John.Smith@example.com', 'ownerCompany': 'example.com', 'ownerPhone': '555-123-4567'}' https://api.ibm.com/watsonanalytics/run/oauth2/v1/config"
+```
+
+This command parses the curl command giving you a liste
+
+```r
+straight <- straighten(curl_cmd, quiet = T)
+str(straight)
+```
+
+you can generate the right `httr` request to use. It goes into the clipboard
+and return as a function inside a list
+
+```r
+httr_req <- straight %>% make_req()
+
+str(httr_req)
+httr_req
+```
+
+you can call this request like that or directly inside `httr::content()`. Do not work here because of the curl example.
+
+```r
+httr_req[[1]]()
+content(httr_req[[1]]())
+```
+
+You can see the help of the package or github README [here](https://github.com/hrbrmstr/curlconverter)
