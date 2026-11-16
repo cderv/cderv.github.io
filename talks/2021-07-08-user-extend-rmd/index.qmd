@@ -12,7 +12,7 @@ listing-item:
     summary: "A talk about R Markdown Cookbook given online at useR!2021"
 ---
 
-[[Slides](https://user2021-enhanced-rmd.netlify.app/) · [Video](https://www.youtube.com/watch?v=Kp68d85849o)]{.gw-talk-links}
+[[Slides](https://user2021-enhanced-rmd.netlify.app/) · [Video](https://www.youtube.com/watch?v=tR7sNOPq9-I&t=1860s)]{.gw-talk-links}
 
 ## Slides
 
@@ -22,6 +22,8 @@ listing-item:
 
 ## Video
 
+Recording of the full useR! 2021 session; the talk starts at 31:00.
+
 ```{=html}
-<div class="gw-embed"><iframe src="https://www.youtube-nocookie.com/embed/Kp68d85849o" title="Video" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<div class="gw-embed"><iframe src="https://www.youtube-nocookie.com/embed/tR7sNOPq9-I?start=1860" title="Video" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 ```

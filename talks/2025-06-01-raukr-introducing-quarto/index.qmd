@@ -9,10 +9,10 @@ listing-item:
     when: "June 2025"
 ---
 
-[[Slides](https://cderv.github.io/raukr-2025-quarto)]{.gw-talk-links}
+[[Slides](https://cderv.github.io/raukr-2025-quarto/)]{.gw-talk-links}
 
 ## Slides
 
 ```{=html}
-<div class="gw-embed"><iframe src="https://cderv.github.io/raukr-2025-quarto" title="Slides" loading="lazy" allowfullscreen></iframe></div>
+<div class="gw-embed"><iframe src="https://cderv.github.io/raukr-2025-quarto/" title="Slides" loading="lazy" allowfullscreen></iframe></div>
 ```
