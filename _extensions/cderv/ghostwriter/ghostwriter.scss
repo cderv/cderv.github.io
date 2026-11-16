@@ -4,7 +4,7 @@
 // used by cderv.rbind.io. Values follow its site.css unless noted.
 
 
-// Palette (overridden by ghostwriter-dark.scss)
+// Palette (overridden by design-a.scss, then design-a-dark.scss in dark mode)
 $gw-font-import: true !default;
 @if $gw-font-import {
   @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
