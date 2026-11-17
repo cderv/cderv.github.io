@@ -1,5 +1,10 @@
 project:
   type: ghostwriter
+  # Default link preview image, used by _scripts/opengraph.js.
+  resources:
+    - images/social-card.png
+  # q2 does not write Open Graph tags yet: added after the render.
+  post-render: _scripts/opengraph.js
 
 website:
   title: "Christophe Dervieux"
@@ -11,6 +16,8 @@ website:
         href: index.qmd
       - text: Talks
         href: talks.qmd
+      - text: Projects
+        href: projects.qmd
       - text: About
         href: about.qmd
     right:

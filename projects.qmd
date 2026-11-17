@@ -1,0 +1,87 @@
+---
+title: "Projects"
+subtitle: "What I work on, maintain or contribute to."
+---
+
+<!--
+How to add a project: copy a `::: {.gw-talk-item}` block in the right section.
+The first line is the title link and optional badges, the second the summary,
+the third the meta line (role · language or ecosystem).
+Facts here must stay confirmed by Christophe (see the blog-post skill, "Facts about Chris").
+-->
+
+::: {.gw-talks}
+
+## Quarto
+
+::: {.list .gw-talk-list}
+::: {.gw-talk-item}
+[quarto-cli](https://github.com/quarto-dev/quarto-cli){.gw-talk-title}
+
+[The current Quarto: an open-source publishing system for scientific and technical documents, built on Pandoc.]{.gw-talk-summary}
+
+[Quarto team at Posit, most of my work · TypeScript, Lua]{.gw-talk-meta}
+:::
+
+::: {.gw-talk-item}
+[q2](https://github.com/quarto-dev/q2){.gw-talk-title} [Next]{.gw-talk-kind}
+
+[The next version of Quarto, a rewrite in Rust. This site is built with it.]{.gw-talk-summary}
+
+[Quarto team at Posit · Rust]{.gw-talk-meta}
+:::
+
+::: {.gw-talk-item}
+[quarto R package](https://github.com/quarto-dev/quarto-r){.gw-talk-title}
+
+[Render and work with Quarto documents from R.]{.gw-talk-summary}
+
+[Maintainer · R]{.gw-talk-meta}
+:::
+:::
+
+## R Markdown
+
+::: {.list .gw-talk-list}
+::: {.gw-talk-item}
+[rmarkdown](https://github.com/rstudio/rmarkdown){.gw-talk-title}
+
+[Dynamic documents for R, and the base of a family of packages around it, such as [rticles](https://github.com/rstudio/rticles) and [distill](https://github.com/rstudio/distill).]{.gw-talk-summary}
+
+[Maintainer · R]{.gw-talk-meta}
+:::
+
+::: {.gw-talk-item}
+[R Markdown Cookbook](https://pkg.yihui.org/rmarkdown-cookbook/){.gw-talk-title} [Book]{.gw-talk-kind}
+
+[Short, practical recipes for R Markdown, co-written with Yihui Xie and Emily Riederer (2020).]{.gw-talk-summary}
+
+[Co-author · Chapman & Hall/CRC, free online]{.gw-talk-meta}
+:::
+:::
+
+## Coding with AI agents, on Windows
+
+::: {.list .gw-talk-list}
+::: {.gw-talk-item}
+[braid](https://github.com/cscheid/braid){.gw-talk-title}
+
+[A local-first issue tracker for LLM agents and the humans they work with, by Carlos Scheidegger.]{.gw-talk-summary}
+
+[Contributor · Rust]{.gw-talk-meta}
+:::
+
+::: {.gw-talk-item}
+[r-bucket](https://github.com/cderv/r-bucket){.gw-talk-title}
+
+[A Scoop bucket to install and update R, RStudio, Positron, Quarto, q2 and related tools on Windows.]{.gw-talk-summary}
+
+[Author · Scoop manifests]{.gw-talk-meta}
+:::
+:::
+
+:::
+
+::: {.mt-4}
+More on [GitHub](https://github.com/cderv).
+:::
