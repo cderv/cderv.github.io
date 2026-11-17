@@ -9,14 +9,12 @@ listing-item:
     language: "in French"
 ---
 
-<!-- Deck moves into this site under /presentations/ (see the presentations migration plan): update the links then. -->
-
 In French.
 
-[[Slides](https://cderv.github.io/presentations/MEETUPR-DATALAB)]{.gw-talk-links}
+[[Slides](/presentations/MEETUPR-DATALAB/)]{.gw-talk-links}
 
 ## Slides
 
 ```{=html}
-<div class="gw-embed"><iframe src="https://cderv.github.io/presentations/MEETUPR-DATALAB" title="Slides" loading="lazy" allowfullscreen></iframe></div>
+<div class="gw-embed"><iframe src="/presentations/MEETUPR-DATALAB/" title="Slides" loading="lazy" allowfullscreen></iframe></div>
 ```
