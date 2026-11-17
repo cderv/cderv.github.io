@@ -26,6 +26,7 @@ $gw-pre-bg: #f0f0f0 !default;
 $gw-pre-border: #dddbcc !default;
 $gw-table-stripe: #f7f7f3 !default;
 $gw-footer-bg: $gw-secondary !default;
+$gw-footer-block-hover: #121212 !default;
 $gw-footer-text: #a3a3a3 !default; // Ghostwriter: #656565 (too faint)
 $gw-selection-bg: #fff5b8 !default;
 $gw-selection-fg: #000 !default;
@@ -891,7 +892,7 @@ footer.footer {
   .gw-top {
     &:hover,
     &:focus-visible {
-      background: #121212;
+      background: $gw-footer-block-hover;
       color: $gw-on-primary;
     }
   }
