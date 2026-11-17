@@ -2,6 +2,7 @@
 title: "PDF publication with pagedown"
 subtitle: "Meetup R Addicts Paris"
 date: 2019-04-18
+image: thumbnail.png
 listing-item:
   extra:
     event: "Meetup R Addicts Paris"

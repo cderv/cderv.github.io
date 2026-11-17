@@ -2,6 +2,7 @@
 title: "Extend the functionality of your R Markdown document"
 subtitle: "useR! 2021, online"
 date: 2021-07-08
+image: thumbnail.png
 description: "A talk about R Markdown Cookbook given online at useR!2021"
 aliases:
   - /talk/2021-user-extend-rmd/
