@@ -32,11 +32,11 @@ Facts here must stay confirmed by Christophe (see the blog-post skill, "Facts ab
 :::
 
 ::: {.gw-talk-item}
-[quarto R package](https://github.com/quarto-dev/quarto-r){.gw-talk-title}
+[quarto R package](https://github.com/quarto-dev/quarto-r){.gw-talk-title} [CRAN]{.gw-talk-kind}
 
 [Render and work with Quarto documents from R.]{.gw-talk-summary}
 
-[Maintainer · R]{.gw-talk-meta}
+[Maintainer at Posit · R]{.gw-talk-meta}
 :::
 :::
 
@@ -46,9 +46,17 @@ Facts here must stay confirmed by Christophe (see the blog-post skill, "Facts ab
 ::: {.gw-talk-item}
 [rmarkdown](https://github.com/rstudio/rmarkdown){.gw-talk-title}
 
-[Dynamic documents for R, and the base of a family of packages around it, such as [rticles](https://github.com/rstudio/rticles) and [distill](https://github.com/rstudio/distill).]{.gw-talk-summary}
+[Dynamic documents for R, and the base of a family of output format packages.]{.gw-talk-summary}
 
-[Maintainer · R]{.gw-talk-meta}
+[Developer · R]{.gw-talk-meta}
+:::
+
+::: {.gw-talk-item}
+[R Markdown output formats](https://github.com/rstudio/rticles){.gw-talk-title} [CRAN]{.gw-talk-kind}
+
+[[rticles](https://github.com/rstudio/rticles) for journal articles, [distill](https://github.com/rstudio/distill) for scientific web publishing, [revealjs](https://github.com/rstudio/revealjs) for slides, [tufte](https://github.com/rstudio/tufte) for Tufte-style handouts.]{.gw-talk-summary}
+
+[Maintainer at Posit · R]{.gw-talk-meta}
 :::
 
 ::: {.gw-talk-item}
@@ -56,7 +64,7 @@ Facts here must stay confirmed by Christophe (see the blog-post skill, "Facts ab
 
 [Install, manage and run several Pandoc versions from R, made to help test the R Markdown packages against each Pandoc release.]{.gw-talk-summary}
 
-[Author · R]{.gw-talk-meta}
+[Author and maintainer at Posit · R]{.gw-talk-meta}
 :::
 
 ::: {.gw-talk-item}
