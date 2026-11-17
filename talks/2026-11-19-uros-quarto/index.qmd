@@ -9,8 +9,12 @@ listing-item:
     kind: "Upcoming"
 ---
 
-<!-- TODO(Christophe): add the slides link (and embed) once the uros2026-quarto-intro repo is public. -->
+At [uRos 2026](https://r-project.ro/conference2026.html), the 14th International Conference on the Use of R in Official Statistics, Paris, November 18–20, 2026, hosted by INSEE at the Pierre Mendès France Conference Center. Session C1, Automated and Accessible Statistical Publishing, Thursday, November 19, 11:30–13:00 ([programme](https://raw.githubusercontent.com/uRosConf/programme2026/main/uros2026_programme.pdf)).
 
-Upcoming.
+[[Slides](https://cderv.dev/uros2026-quarto-intro/) · [Example bulletin](https://cderv.dev/uros2026-quarto-example/) · [Example repository](https://github.com/cderv/uros2026-quarto-example)]{.gw-talk-links}
 
-[[Example repository](https://github.com/cderv/uros2026-quarto-example)]{.gw-talk-links}
+## Slides
+
+```{=html}
+<div class="gw-embed"><iframe src="https://cderv.dev/uros2026-quarto-intro/" title="Slides" loading="lazy" allowfullscreen></iframe></div>
+```
