@@ -76,7 +76,7 @@ Facts here must stay confirmed by Christophe (see the blog-post skill, "Facts ab
 
 [A reproducible setup for Claude Code cloud environments: one setup script, opt-in tools per environment, a guard that keeps secrets out of the agent's context.]{.gw-talk-summary}
 
-[Author · Shell]{.gw-talk-meta}
+[Author · Shell, Python]{.gw-talk-meta}
 :::
 
 ::: {.gw-talk-item}
