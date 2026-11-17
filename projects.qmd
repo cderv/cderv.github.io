@@ -52,6 +52,14 @@ Facts here must stay confirmed by Christophe (see the blog-post skill, "Facts ab
 :::
 
 ::: {.gw-talk-item}
+[pandoc](https://github.com/cderv/pandoc){.gw-talk-title} [CRAN]{.gw-talk-kind}
+
+[Install, manage and run several Pandoc versions from R, made to help test the R Markdown packages against each Pandoc release.]{.gw-talk-summary}
+
+[Author · R]{.gw-talk-meta}
+:::
+
+::: {.gw-talk-item}
 [R Markdown Cookbook](https://pkg.yihui.org/rmarkdown-cookbook/){.gw-talk-title} [Book]{.gw-talk-kind}
 
 [Short, practical recipes for R Markdown, co-written with Yihui Xie and Emily Riederer (2020).]{.gw-talk-summary}
@@ -64,11 +72,11 @@ Facts here must stay confirmed by Christophe (see the blog-post skill, "Facts ab
 
 ::: {.list .gw-talk-list}
 ::: {.gw-talk-item}
-[braid](https://github.com/cscheid/braid){.gw-talk-title}
+[sandbox-cloud-setup](https://github.com/cderv/sandbox-cloud-setup){.gw-talk-title}
 
-[A local-first issue tracker for LLM agents and the humans they work with, by Carlos Scheidegger.]{.gw-talk-summary}
+[A reproducible setup for Claude Code cloud environments: one setup script, opt-in tools per environment, a guard that keeps secrets out of the agent's context.]{.gw-talk-summary}
 
-[Contributor · Rust]{.gw-talk-meta}
+[Author · Shell]{.gw-talk-meta}
 :::
 
 ::: {.gw-talk-item}
@@ -77,6 +85,34 @@ Facts here must stay confirmed by Christophe (see the blog-post skill, "Facts ab
 [A Scoop bucket to install and update R, RStudio, Positron, Quarto, q2 and related tools on Windows.]{.gw-talk-summary}
 
 [Author · Scoop manifests]{.gw-talk-meta}
+:::
+:::
+
+## Earlier projects
+
+::: {.list .gw-talk-list}
+::: {.gw-talk-item}
+[opendatarte](https://github.com/cderv/opendatarte){.gw-talk-title}
+
+[An R client for the RTE open data API (data.rte-france.com), from my time at RTE.]{.gw-talk-summary}
+
+[Author · R · 2019]{.gw-talk-meta}
+:::
+
+::: {.gw-talk-item}
+[proxyconfig](https://github.com/cderv/proxyconfig){.gw-talk-title}
+
+[Helpers and RStudio addins to configure a corporate proxy for R.]{.gw-talk-summary}
+
+[Author · R · 2019]{.gw-talk-meta}
+:::
+
+::: {.gw-talk-item}
+[bfr](https://github.com/cderv/bfr){.gw-talk-title}
+
+[Get French traffic forecasts from Bison Futé in R.]{.gw-talk-summary}
+
+[Author · R · 2018]{.gw-talk-meta}
 :::
 :::
 
