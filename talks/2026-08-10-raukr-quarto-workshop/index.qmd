@@ -2,6 +2,8 @@
 title: "Quarto workshop (2 sessions)"
 subtitle: "RaukR 2026, Visby"
 date: 2026-08-10
+description: "Two afternoon sessions on Quarto at the RaukR 2026 summer school: one document, then a whole project."
+image: thumbnail.png
 listing-item:
   extra:
     event: "RaukR 2026, Visby"
@@ -11,4 +13,13 @@ listing-item:
 
 Workshop.
 
-[[Workshop site](https://cderv.github.io/raukr-2026-quarto/)]{.gw-talk-links}
+Two afternoon sessions at [RaukR 2026](https://nbisweden.github.io/raukr-2026/), the Advanced R for Bioinformatics summer school in Visby, Gotland, for people who already write R and have used R Markdown or Quarto.
+
+- **Mon 10 Aug, Introduction to Quarto**: authoring, layout and output formats, including Typst.
+- **Tue 11 Aug, Quarto projects**: websites, configuration, publishing and practical techniques.
+
+Each session has slides and a hands-on lab, with solutions.
+
+[[Workshop site](https://cderv.dev/raukr-2026-quarto/) · [Code](https://github.com/cderv/raukr-2026-quarto) · [Exercises](https://github.com/cderv/raukr-2026-quarto-exercises)]{.gw-talk-links}
+
+[![Home page of the workshop site](thumbnail.png){fig-alt="Home page of the workshop site, RaukR 2026 · Quarto"}](https://cderv.dev/raukr-2026-quarto/)

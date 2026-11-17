@@ -2,6 +2,7 @@
 title: "Enrichir Quarto avec les filtres Lua"
 subtitle: "Rencontres R 2026, Nantes"
 date: 2026-06-17
+image: thumbnail.png
 listing-item:
   extra:
     event: "Rencontres R 2026, Nantes"
@@ -10,6 +11,8 @@ listing-item:
 ---
 
 In French.
+
+At the [Rencontres R 2026](https://rr2026.sciencesconf.org/), Nantes Université.
 
 An English version of this talk was given at posit::conf(2025): [Beyond the Basics: Expanding Quarto's Capabilities with Lua](../2025-09-17-posit-conf-quarto-lua/index.qmd).
 

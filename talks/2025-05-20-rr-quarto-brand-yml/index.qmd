@@ -1,20 +1,24 @@
 ---
 title: "Personnaliser ses documents Quarto avec `_brand.yml`"
-subtitle: "Rencontres R 2025"
+subtitle: "Rencontres R 2025, Mons"
 date: 2025-05-20
+description: "Une identité visuelle cohérente pour ses documents Quarto, HTML et PDF (Typst), avec `_brand.yml`."
+image: thumbnail.png
 listing-item:
   extra:
-    event: "Rencontres R 2025"
+    event: "Rencontres R 2025, Mons"
     when: "May 20, 2025"
     language: "in French"
 ---
 
 In French.
 
-[[Slides](https://cderv.github.io/rr2025-quarto-brand-yml/)]{.gw-talk-links}
+At the [Rencontres R 2025](https://rr2025.sciencesconf.org/), Mons. How `_brand.yml` gives Quarto documents a consistent visual identity, in HTML and in PDF with Typst, with light and dark themes, and how the same file is reused by Shiny and bslib. The example is a fictional company, Pulse Mobile.
+
+[[Slides](https://cderv.dev/rr2025-quarto-brand-yml/) · [Code](https://github.com/cderv/rr2025-quarto-brand-yml) · [Example](https://github.com/cderv/demo-brand-pulse)]{.gw-talk-links}
 
 ## Slides
 
 ```{=html}
-<div class="gw-embed"><iframe src="https://cderv.github.io/rr2025-quarto-brand-yml/" title="Slides" loading="lazy" allowfullscreen></iframe></div>
+<div class="gw-embed"><iframe src="https://cderv.dev/rr2025-quarto-brand-yml/" title="Slides" loading="lazy" allowfullscreen></iframe></div>
 ```

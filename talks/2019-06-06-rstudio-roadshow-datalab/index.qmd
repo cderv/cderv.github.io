@@ -1,11 +1,20 @@
 ---
 title: "Building a datalab service with RStudio products"
-subtitle: "RStudio roadshow (ThinkR)"
+subtitle: "RStudio & thinkR Roadshow, Paris"
 date: 2019-06-06
+description: "Why a corporate datalab built on R encourages good practices, eases the path to production and grows an internal community."
 listing-item:
   extra:
-    event: "RStudio roadshow (ThinkR)"
+    event: "RStudio & thinkR Roadshow"
     when: "Jun 6, 2019"
 ---
 
+At the RStudio & thinkR Roadshow, June 6, 2019. Feedback from building a datalab service at RTE: why a datalab built on R and RStudio products encourages good practices, makes it easier to put R in production, and helps an internal community grow.
+
 [[Slides on Speaker Deck](https://speakerdeck.com/cderv/building-a-datalab-service)]{.gw-talk-links}
+
+## Slides
+
+```{=html}
+<div class="gw-embed"><iframe src="https://speakerdeck.com/player/6322d845443d425f89f247020ad60073" title="Slides" loading="lazy" allowfullscreen></iframe></div>
+```

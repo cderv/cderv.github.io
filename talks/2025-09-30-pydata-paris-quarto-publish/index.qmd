@@ -2,18 +2,22 @@
 title: "From Jupyter Notebook to Publish-Ready Report: Effortless Sharing with Quarto"
 subtitle: "PyData Paris 2025"
 date: 2025-09-30
+description: "Turning Jupyter notebooks into web pages and PDFs with Quarto: one-command publishing, Typst PDFs, brand.yml."
+image: thumbnail.png
 listing-item:
   extra:
     event: "PyData Paris 2025"
     when: "Sep 30, 2025"
 ---
 
-[[Slides](https://cderv.github.io/pydata-paris-2025-quarto-publish/) · [Video](https://www.youtube.com/watch?v=0QIxdDJ8cKE)]{.gw-talk-links}
+At [PyData Paris 2025](https://pretalx.com/pydata-paris-2025/talk/K7CAAE/), September 30, 2025. Three demos on one notebook: publishing it online with `quarto publish`, rendering a print-ready PDF with Typst, and applying an organization's style to HTML and PDF with brand.yml.
+
+[[Slides](https://cderv.dev/pydata-paris-2025-quarto-publish/) · [Video](https://www.youtube.com/watch?v=0QIxdDJ8cKE) · [Talk page](https://pretalx.com/pydata-paris-2025/talk/K7CAAE/) · [Code](https://github.com/cderv/pydata-paris-2025-quarto-publish) · [Demo](https://github.com/cderv/demo-ipynb-whr-report)]{.gw-talk-links}
 
 ## Slides
 
 ```{=html}
-<div class="gw-embed"><iframe src="https://cderv.github.io/pydata-paris-2025-quarto-publish/" title="Slides" loading="lazy" allowfullscreen></iframe></div>
+<div class="gw-embed"><iframe src="https://cderv.dev/pydata-paris-2025-quarto-publish/" title="Slides" loading="lazy" allowfullscreen></iframe></div>
 ```
 
 ## Video

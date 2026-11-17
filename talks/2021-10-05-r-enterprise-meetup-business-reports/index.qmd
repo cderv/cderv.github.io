@@ -3,6 +3,7 @@ title: "Business Reports with R Markdown"
 subtitle: "R in Enterprise Meetup (RStudio)"
 date: 2021-10-05
 description: "A talk about theming of reports to fit with graphical guidelines"
+image: thumbnail.png
 aliases:
   - /talk/2021-meetup-style-rmd/
 listing-item:
@@ -12,7 +13,9 @@ listing-item:
     summary: "A talk about theming of reports to fit with graphical guidelines"
 ---
 
-[[Slides](https://meetup-rmd-style-business-report.netlify.app/) · [Video](https://www.youtube.com/watch?v=gQ9he9dyfGs)]{.gw-talk-links}
+Online, at the [RStudio Enterprise Community Meetup](https://www.meetup.com/RStudio-Enterprise-Community-Meetup/events/280078607). How to theme HTML, Word, PowerPoint and PDF reports made with R Markdown so they follow an organization's graphical guidelines.
+
+[[Slides](https://meetup-rmd-style-business-report.netlify.app/) · [Video](https://www.youtube.com/watch?v=gQ9he9dyfGs) · [Code](https://github.com/cderv/meetup-2021-rmd-business-report)]{.gw-talk-links}
 
 ## Slides
 

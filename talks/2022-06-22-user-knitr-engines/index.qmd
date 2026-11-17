@@ -2,6 +2,7 @@
 title: 'A tour of \{knitr\} engines'
 subtitle: "useR! 2022, online"
 date: 2022-06-22
+image: thumbnail.png
 description: "Well known for its R engine, let's take a tour of other engines one can use to improve its skills on creating R Markdown content"
 aliases:
   - /talk/2022-user-knitr-engines/
@@ -12,7 +13,9 @@ listing-item:
     summary: "Well known for its R engine, let's take a tour of other engines one can use to improve its skills on creating R Markdown content"
 ---
 
-[[Slides](https://user2022-knitr-engines.netlify.app/)]{.gw-talk-links}
+At [useR! 2022](https://user2022.r-project.org/), online.
+
+[[Slides](https://user2022-knitr-engines.netlify.app/) · [Code](https://github.com/cderv/user2022-knitr-engines)]{.gw-talk-links}
 
 ## Slides
 
