@@ -1,0 +1,81 @@
+/* Site-specific styles, on top of the Ghostwriter extension. */
+
+/* Projects page: a logo column on the left of each item. */
+.gw-talk-item.gw-project {
+  padding-left: 88px;
+  min-height: 96px;
+}
+
+.gw-talk-item.gw-project:hover,
+.gw-talk-item.gw-project:focus-within {
+  padding-left: 92px;
+}
+
+.gw-project .gw-project-logo {
+  position: absolute;
+  left: 8px;
+  top: 16px;
+  width: 60px;
+  height: 69px;
+  object-fit: contain;
+  margin: 0;
+}
+
+.gw-project .gw-project-round {
+  width: 56px;
+  height: 56px;
+  left: 10px;
+  top: 22px;
+}
+
+.gw-project .gw-project-cover {
+  height: 80px;
+  top: 14px;
+}
+
+/* Projects without a logo: a hexagon tile with a Bootstrap icon. */
+.gw-project .gw-project-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  background: var(--bs-link-color, #0f6b78);
+  color: var(--bs-body-bg, #fbfaf7);
+  font-size: 26px;
+}
+
+@media (max-width: 575.98px) {
+  .gw-talk-item.gw-project,
+  .gw-talk-item.gw-project:hover,
+  .gw-talk-item.gw-project:focus-within {
+    padding-left: 72px;
+  }
+
+  .gw-project .gw-project-logo {
+    width: 48px;
+    height: 55px;
+  }
+
+  .gw-project .gw-project-round {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/* About page portrait. */
+img.gw-about-photo {
+  float: right;
+  width: 168px;
+  height: 168px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 4px 0 16px 28px;
+}
+
+@media (max-width: 575.98px) {
+  img.gw-about-photo {
+    float: none;
+    display: block;
+    margin: 0 auto 20px;
+  }
+}
