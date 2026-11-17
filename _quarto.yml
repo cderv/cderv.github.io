@@ -4,7 +4,7 @@ project:
 website:
   title: "Christophe Dervieux"
   description: "Notes on Quarto, R Markdown, and working with AI agents."
-  site-url: https://example.invalid # TODO: set when the domain is chosen (needed for RSS)
+  site-url: https://cderv.dev
   navbar:
     left:
       - text: Blog

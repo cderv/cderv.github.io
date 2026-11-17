@@ -1,0 +1,60 @@
+name: Publish site
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      # Nightly q2 from the GitHub releases of quarto-dev/q2, checked with
+      # minisign by the installer. For a fixed release, replace --nightly
+      # with --version vX.Y.Z.
+      - name: Install q2 (nightly)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          sudo apt-get install -y minisign
+          curl -fsSL https://raw.githubusercontent.com/quarto-dev/q2/main/install.sh | bash -s -- --nightly
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - name: q2 version
+        run: q2 --version
+
+      - name: Render
+        run: q2 render
+
+      - uses: actions/upload-pages-artifact@v3
+        if: github.event_name != 'pull_request'
+        with:
+          path: _site
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
