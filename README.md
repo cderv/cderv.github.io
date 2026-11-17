@@ -12,4 +12,4 @@ The theme is committed in `_extensions/cderv/ghostwriter/`; its source is [cderv
 
 Link previews (LinkedIn, Bluesky, Mastodon): q2 does not write Open Graph tags yet, so `_scripts/opengraph.js` adds them after each render (`post-render` in `_quarto.yml`, needs Node). A page uses its `description` (else `subtitle`) and its `image` front matter, or the default card `images/social-card.png`. To change that card, edit `_social-card/card.html` and run `node _social-card/make-card.js` (needs Playwright). This is a workaround until q2 supports Open Graph.
 
-Site styles on top of the theme: `styles/site.scss` (light and dark). Project entries on the Projects page use the local filter `_extensions/project-list/` (`::: {.project}` divs).
+Site styles on top of the theme: `styles/site.scss` (light and dark). The Projects page is data: inline records in its front matter, one custom listing per section, rendered by `_templates/projects.template`.

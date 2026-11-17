@@ -1,95 +1,136 @@
 ---
 title: "Projects"
 subtitle: "What I work on, maintain or contribute to."
-filters:
-  - project-list
+# One custom listing per section, with inline records rendered by
+# _templates/projects.template (fields documented there).
+# Hex stickers: https://github.com/rstudio/hex-stickers (`thumbs/`), saved in images/projects/.
+# Facts here must stay confirmed by Christophe (see the blog-post skill, "Facts about Chris").
+listing:
+  - id: projects-quarto
+    type: custom
+    template: !str _templates/projects.template
+    contents:
+      - title: quarto-cli
+        href: https://github.com/quarto-dev/quarto-cli
+        logo: images/projects/quarto.svg
+        logo-shape: round
+        summary: "The current Quarto: an open-source publishing system for scientific and technical documents, built on Pandoc."
+        meta: "Quarto team at Posit, most of my work · TypeScript, Lua"
+      - title: q2
+        href: https://github.com/quarto-dev/q2
+        logo: images/projects/quarto.svg
+        logo-shape: round
+        badge: Next
+        summary: "The next version of Quarto, a rewrite in Rust. This site is built with it."
+        meta: "Quarto team at Posit · Rust"
+      - title: quarto R package
+        href: https://github.com/quarto-dev/quarto-r
+        logo: images/projects/quarto-r.png
+        badge: CRAN
+        summary: "Render and work with Quarto documents from R."
+        meta: "Maintainer at Posit · R"
+  - id: projects-rmarkdown
+    type: custom
+    template: !str _templates/projects.template
+    contents:
+      - title: rmarkdown
+        href: https://github.com/rstudio/rmarkdown
+        logo: images/projects/rmarkdown.png
+        badge: CRAN
+        summary: "Dynamic documents for R, and the base of a family of output format packages."
+        meta: "Co-maintainer at Posit · R"
+      - title: rticles
+        href: https://github.com/rstudio/rticles
+        logo: images/projects/rticles.png
+        badge: CRAN
+        summary: "R Markdown templates for journal articles."
+        meta: "Maintainer at Posit · R"
+      - title: distill
+        href: https://github.com/rstudio/distill
+        logo: images/projects/distill.png
+        badge: CRAN
+        summary: "R Markdown format for scientific and technical writing on the web."
+        meta: "Maintainer at Posit · R"
+      - title: revealjs
+        href: https://github.com/rstudio/revealjs
+        icon: easel
+        badge: CRAN
+        summary: "R Markdown format for reveal.js slides."
+        meta: "Maintainer at Posit · R"
+      - title: tufte
+        href: https://github.com/rstudio/tufte
+        icon: layout-sidebar-reverse
+        badge: CRAN
+        summary: "Tufte-style handouts and books, in HTML and PDF."
+        meta: "Maintainer at Posit · R"
+      - title: pandoc
+        href: https://github.com/cderv/pandoc
+        icon: arrow-left-right
+        badge: CRAN
+        summary: "Install, manage and run several Pandoc versions from R, made to help test the R Markdown packages against each Pandoc release."
+        meta: "Author and maintainer at Posit · R"
+      - title: R Markdown Cookbook
+        href: https://pkg.yihui.org/rmarkdown-cookbook/
+        logo: images/projects/rmarkdown-cookbook.png
+        logo-shape: cover
+        badge: Book
+        summary: "Short, practical recipes for R Markdown, co-written with Yihui Xie and Emily Riederer (2020)."
+        meta: "Co-author · Chapman & Hall/CRC, free online"
+  - id: projects-agents
+    type: custom
+    template: !str _templates/projects.template
+    contents:
+      - title: sandbox-cloud-setup
+        href: https://github.com/cderv/sandbox-cloud-setup
+        icon: cloud-check
+        summary: "A reproducible setup for Claude Code cloud environments: one setup script, opt-in tools per environment, a guard that keeps secrets out of the agent's context."
+        meta: "Author · Shell, Python"
+      - title: r-bucket
+        href: https://github.com/cderv/r-bucket
+        icon: windows
+        summary: "A Scoop bucket to install and update R, RStudio, Positron, Quarto, q2 and related tools on Windows."
+        meta: "Author · Scoop manifests"
+  - id: projects-earlier
+    type: custom
+    template: !str _templates/projects.template
+    contents:
+      - title: opendatarte
+        href: https://github.com/cderv/opendatarte
+        icon: lightning-charge
+        summary: "An R client for the RTE open data API (data.rte-france.com), from my time at RTE."
+        meta: "Author · R · 2019"
+      - title: proxyconfig
+        href: https://github.com/cderv/proxyconfig
+        icon: shield-lock
+        summary: "Helpers and RStudio addins to configure a corporate proxy for R."
+        meta: "Author · R · 2019"
+      - title: bfr
+        href: https://github.com/cderv/bfr
+        icon: car-front
+        summary: "Get French traffic forecasts from Bison Futé in R."
+        meta: "Author · R · 2018"
 ---
-
-<!--
-How to add a project: copy a `::: {.project}` div in the right section.
-Attributes are documented in _extensions/project-list/project-list.lua:
-title, href, logo (image) or icon (Bootstrap icon name), logo-shape, badge, meta.
-The div content is the summary. Hex stickers come from
-https://github.com/rstudio/hex-stickers (`thumbs/`), saved in images/projects/.
-Facts here must stay confirmed by Christophe (see the blog-post skill, "Facts about Chris").
--->
 
 ::: {.gw-talks}
 
 ## Quarto
 
-::: {.project-list}
-::: {.project title="quarto-cli" href="https://github.com/quarto-dev/quarto-cli" logo="images/projects/quarto.svg" logo-shape="round" meta="Quarto team at Posit, most of my work · TypeScript, Lua"}
-The current Quarto: an open-source publishing system for scientific and technical documents, built on Pandoc.
-:::
-
-::: {.project title="q2" href="https://github.com/quarto-dev/q2" logo="images/projects/quarto.svg" logo-shape="round" badge="Next" meta="Quarto team at Posit · Rust"}
-The next version of Quarto, a rewrite in Rust. This site is built with it.
-:::
-
-::: {.project title="quarto R package" href="https://github.com/quarto-dev/quarto-r" logo="images/projects/quarto-r.png" badge="CRAN" meta="Maintainer at Posit · R"}
-Render and work with Quarto documents from R.
-:::
+::: {#projects-quarto}
 :::
 
 ## R Markdown
 
-::: {.project-list}
-::: {.project title="rmarkdown" href="https://github.com/rstudio/rmarkdown" logo="images/projects/rmarkdown.png" badge="CRAN" meta="Co-maintainer at Posit · R"}
-Dynamic documents for R, and the base of a family of output format packages.
-:::
-
-::: {.project title="rticles" href="https://github.com/rstudio/rticles" logo="images/projects/rticles.png" badge="CRAN" meta="Maintainer at Posit · R"}
-R Markdown templates for journal articles.
-:::
-
-::: {.project title="distill" href="https://github.com/rstudio/distill" logo="images/projects/distill.png" badge="CRAN" meta="Maintainer at Posit · R"}
-R Markdown format for scientific and technical writing on the web.
-:::
-
-::: {.project title="revealjs" href="https://github.com/rstudio/revealjs" icon="easel" badge="CRAN" meta="Maintainer at Posit · R"}
-R Markdown format for reveal.js slides.
-:::
-
-::: {.project title="tufte" href="https://github.com/rstudio/tufte" icon="layout-sidebar-reverse" badge="CRAN" meta="Maintainer at Posit · R"}
-Tufte-style handouts and books, in HTML and PDF.
-:::
-
-::: {.project title="pandoc" href="https://github.com/cderv/pandoc" icon="arrow-left-right" badge="CRAN" meta="Author and maintainer at Posit · R"}
-Install, manage and run several Pandoc versions from R, made to help test the R Markdown packages against each Pandoc release.
-:::
-
-::: {.project title="R Markdown Cookbook" href="https://pkg.yihui.org/rmarkdown-cookbook/" logo="images/projects/rmarkdown-cookbook.png" logo-shape="cover" badge="Book" meta="Co-author · Chapman & Hall/CRC, free online"}
-Short, practical recipes for R Markdown, co-written with Yihui Xie and Emily Riederer (2020).
-:::
+::: {#projects-rmarkdown}
 :::
 
 ## Coding with AI agents, on Windows
 
-::: {.project-list}
-::: {.project title="sandbox-cloud-setup" href="https://github.com/cderv/sandbox-cloud-setup" icon="cloud-check" meta="Author · Shell, Python"}
-A reproducible setup for Claude Code cloud environments: one setup script, opt-in tools per environment, a guard that keeps secrets out of the agent's context.
-:::
-
-::: {.project title="r-bucket" href="https://github.com/cderv/r-bucket" icon="windows" meta="Author · Scoop manifests"}
-A Scoop bucket to install and update R, RStudio, Positron, Quarto, q2 and related tools on Windows.
-:::
+::: {#projects-agents}
 :::
 
 ## Earlier projects
 
-::: {.project-list}
-::: {.project title="opendatarte" href="https://github.com/cderv/opendatarte" icon="lightning-charge" meta="Author · R · 2019"}
-An R client for the RTE open data API (data.rte-france.com), from my time at RTE.
-:::
-
-::: {.project title="proxyconfig" href="https://github.com/cderv/proxyconfig" icon="shield-lock" meta="Author · R · 2019"}
-Helpers and RStudio addins to configure a corporate proxy for R.
-:::
-
-::: {.project title="bfr" href="https://github.com/cderv/bfr" icon="car-front" meta="Author · R · 2018"}
-Get French traffic forecasts from Bison Futé in R.
-:::
+::: {#projects-earlier}
 :::
 
 :::

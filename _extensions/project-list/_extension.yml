@@ -1,6 +1,0 @@
-title: Project list
-author: Christophe Dervieux
-version: 0.1.0
-contributes:
-  filters:
-    - project-list.lua
