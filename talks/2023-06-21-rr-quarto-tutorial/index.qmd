@@ -2,6 +2,7 @@
 title: "Tutoriel Quarto"
 subtitle: "Rencontres R 2023, Avignon"
 date: 2023-06-21
+image: thumbnail.png
 description: "Tutoriel d'introduction à Quarto aux Rencontres R 2023 : ce qu'est Quarto, le passage depuis R Markdown, les projets."
 aliases:
   - /talks/2023-06-01-rr-quarto-tutorial/

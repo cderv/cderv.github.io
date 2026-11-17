@@ -2,6 +2,7 @@
 title: "Getting Started with Positron: A Next-Generation IDE for Data Science"
 subtitle: "uRos 2026, Paris"
 date: 2026-11-18
+image: thumbnail.png
 listing-item:
   extra:
     event: "uRos 2026, Paris"

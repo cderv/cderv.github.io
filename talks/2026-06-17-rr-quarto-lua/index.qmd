@@ -2,6 +2,7 @@
 title: "Enrichir Quarto avec les filtres Lua"
 subtitle: "Rencontres R 2026, Nantes"
 date: 2026-06-17
+image: thumbnail.png
 listing-item:
   extra:
     event: "Rencontres R 2026, Nantes"

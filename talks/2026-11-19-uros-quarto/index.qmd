@@ -2,6 +2,7 @@
 title: "Reproducible Statistical Publications with Quarto"
 subtitle: "uRos 2026, Paris"
 date: 2026-11-19
+image: thumbnail.png
 listing-item:
   extra:
     event: "uRos 2026, Paris"

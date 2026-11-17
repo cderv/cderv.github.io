@@ -2,6 +2,7 @@
 title: "Headless chrome automation with R"
 subtitle: "useR! 2019, Toulouse"
 date: 2019-07-12
+image: thumbnail.png
 description: "Lightning talk on crrri, an R package to drive headless Chrome through the Chrome DevTools Protocol."
 listing-item:
   extra:

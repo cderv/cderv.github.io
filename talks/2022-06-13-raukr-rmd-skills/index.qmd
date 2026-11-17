@@ -2,6 +2,7 @@
 title: "Improve your R Markdown skills!"
 subtitle: "RaukR 2022, online"
 date: 2022-06-13
+image: thumbnail.png
 description: "A talk about some updated recipes of the R Markdown Cookbook given online at raukr 2022"
 aliases:
   - /talk/2022-raukr-rmd-skills/
