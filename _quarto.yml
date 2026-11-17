@@ -35,4 +35,7 @@ website:
 
 format:
   html:
-    css: styles/site.css
+    # Added after the extension's theme files (lists combine).
+    theme:
+      light: [styles/site.scss]
+      dark: [styles/site.scss]

@@ -1,14 +1,19 @@
-/* Site-specific styles, on top of the Ghostwriter extension. */
+/*-- scss:defaults --*/
+// Site-specific styles, layered after the Ghostwriter extension's theme
+// (light and dark), so the $gw-* palette variables are available here.
 
-/* Projects page: a logo column on the left of each item. */
+/*-- scss:rules --*/
+
+// Projects page (filter _extensions/project-list): a logo column on the
+// left of each `.gw-talk-item`.
 .gw-talk-item.gw-project {
   padding-left: 88px;
   min-height: 96px;
-}
 
-.gw-talk-item.gw-project:hover,
-.gw-talk-item.gw-project:focus-within {
-  padding-left: 92px;
+  &:hover,
+  &:focus-within {
+    padding-left: 92px;
+  }
 }
 
 .gw-project .gw-project-logo {
@@ -33,18 +38,28 @@
   top: 14px;
 }
 
-/* Projects without a logo: a hexagon tile with a Bootstrap icon. */
+// Projects without a logo: a hexagon tile with a Bootstrap icon.
 .gw-project .gw-project-icon {
   display: flex;
   align-items: center;
   justify-content: center;
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-  background: var(--bs-link-color, #0f6b78);
-  color: var(--bs-body-bg, #fbfaf7);
+  background: $gw-primary;
+  color: $gw-on-primary;
   font-size: 26px;
 }
 
-@media (max-width: 575.98px) {
+// About page portrait.
+img.gw-about-photo {
+  float: right;
+  width: 168px;
+  height: 168px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 4px 0 16px 28px;
+}
+
+@include media-breakpoint-down(sm) {
   .gw-talk-item.gw-project,
   .gw-talk-item.gw-project:hover,
   .gw-talk-item.gw-project:focus-within {
@@ -60,19 +75,7 @@
     width: 44px;
     height: 44px;
   }
-}
 
-/* About page portrait. */
-img.gw-about-photo {
-  float: right;
-  width: 168px;
-  height: 168px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin: 4px 0 16px 28px;
-}
-
-@media (max-width: 575.98px) {
   img.gw-about-photo {
     float: none;
     display: block;

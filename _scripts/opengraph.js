@@ -1,7 +1,12 @@
 // Post-render script: adds Open Graph and Twitter card tags to each page.
 //
-// q2 does not generate these tags yet (Quarto 1 does, with `open-graph: true`).
-// LinkedIn, Bluesky and Mastodon read them to build the link preview card.
+// WORKAROUND: q2 does not support Open Graph yet. Quarto 1 has it built in
+// (`website: open-graph: true` and `twitter-card: true`), q2 ignores those
+// keys. And tags set from a Lua filter (`header-includes`) are not written to
+// the page either, so this runs on the HTML after the render.
+// Remove this script and its `post-render` entry once q2 supports it.
+//
+// LinkedIn, Bluesky and Mastodon read these tags to build the link preview.
 //
 // For each rendered HTML page (redirect pages from `aliases` are skipped):
 // - og:title      the page title, or the site title for the home page
@@ -12,8 +17,7 @@
 // - og:image      the page `image` from its front matter, else the default card
 // - og:type       `article` for dated pages (posts, talks), else `website`
 //
-// No dependencies: plain Node (>= 18). Delete this script once q2 supports
-// Open Graph, and set it in _quarto.yml instead.
+// No dependencies: plain Node (>= 18).
 
 const fs = require("node:fs");
 const path = require("node:path");

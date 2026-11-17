@@ -1,10 +1,16 @@
 <!doctype html>
 <!--
-  Default link preview card (Open Graph image) for cderv.dev, 1200 x 630.
+  Default link preview image (og:image) for cderv.dev, 1200 x 630.
+
+  Why this exists: q2 does not support Open Graph yet, so
+  _scripts/opengraph.js writes the tags and points pages without their own
+  `image:` to images/social-card.png. Quarto 1 does not generate such a card
+  either: with `open-graph: true` it uses the page `image`, else an image found in the page.
+
   Regenerate images/social-card.png after editing:
     node _social-card/make-card.js
   (needs Playwright: npm i -g playwright && npx playwright install chromium)
-  Add photo.jpg next to this file to show the portrait on the right.
+  The portrait is the site's images/christophe.jpg.
 -->
 <html>
 <head>
@@ -41,6 +47,6 @@
     <h1>Quarto team at Posit. R&nbsp;Markdown maintainer. Coding with AI agents, on Windows.</h1>
     <div class="url">cderv.dev</div>
   </div>
-  <img class="photo" src="photo.jpg" alt="" onerror="this.remove()">
+  <img class="photo" src="../images/christophe.jpg" alt="" onerror="this.remove()">
 </body>
 </html>
