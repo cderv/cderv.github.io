@@ -2,6 +2,7 @@
 title: "Publishing with Quarto"
 subtitle: "Code 4 Thought podcast"
 date: 2025-11-03
+image: https://i.ytimg.com/vi/Z4etzebLlLs/hqdefault.jpg
 listing-item:
   extra:
     event: "Code 4 Thought podcast"

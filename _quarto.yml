@@ -1,7 +1,9 @@
 project:
   type: ghostwriter
-  # Default link preview image, used by _scripts/opengraph.js.
   resources:
+    # Decks and redirect pages moved from cderv/presentations (old GitHub Pages site).
+    - presentations/
+    # Default link preview image, used by _scripts/opengraph.js.
     - images/social-card.png
   # q2 does not write Open Graph tags yet: added after the render.
   post-render: _scripts/opengraph.js

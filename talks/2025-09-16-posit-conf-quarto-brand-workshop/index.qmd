@@ -2,6 +2,8 @@
 title: "Quarto Documents: Branded Websites, Presentations, Dashboards, and PDFs with Quarto"
 subtitle: "posit::conf(2025), Atlanta"
 date: 2025-09-16
+image: thumbnail.png
+description: "One-day workshop: websites, presentations, dashboards and PDFs with Quarto, with consistent theming through brand.yml."
 listing-item:
   extra:
     event: "posit::conf(2025), Atlanta"
@@ -11,4 +13,6 @@ listing-item:
 
 Workshop. With Sara Altman, Isabella Velásquez and Gordon Woodhull.
 
-[[Materials](https://posit-conf-2025.github.io/quarto-brand/materials/01-intro/slides.html)]{.gw-talk-links}
+A one-day, hands-on workshop at posit::conf(2025), Atlanta: building websites, presentations, dashboards and PDFs with Quarto, and theming them all consistently with brand.yml.
+
+[[Workshop site](https://posit-conf-2025.github.io/quarto-brand/) · [Intro slides](https://posit-conf-2025.github.io/quarto-brand/materials/01-intro/slides.html) · [Code](https://github.com/posit-conf-2025/quarto-brand)]{.gw-talk-links}

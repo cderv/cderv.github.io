@@ -2,16 +2,20 @@
 title: "Introduction to Quarto"
 subtitle: "RaukR 2023"
 date: 2023-06-15
+description: "An introduction to Quarto for R users, given at the RaukR 2023 summer school."
+image: thumbnail.png
 listing-item:
   extra:
     event: "RaukR 2023"
     when: "Jun 15, 2023"
 ---
 
-[[Slides](https://cderv.github.io/raukr-2023-quarto/)]{.gw-talk-links}
+Online lecture at [RaukR 2023](https://nbisweden.github.io/workshop-RaukR-2306/), the Advanced R for Bioinformatics summer school held in Visby, Sweden.
+
+[[Slides](https://cderv.dev/raukr-2023-quarto/) · [Code](https://github.com/cderv/raukr-2023-quarto)]{.gw-talk-links}
 
 ## Slides
 
 ```{=html}
-<div class="gw-embed"><iframe src="https://cderv.github.io/raukr-2023-quarto/" title="Slides" loading="lazy" allowfullscreen></iframe></div>
+<div class="gw-embed"><iframe src="https://cderv.dev/raukr-2023-quarto/" title="Slides" loading="lazy" allowfullscreen></iframe></div>
 ```

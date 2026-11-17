@@ -2,18 +2,22 @@
 title: "Exploring Quarto Dashboard for impactful and visual communication"
 subtitle: "PyData Paris 2024"
 date: 2024-09-25
+description: "Turning a Jupyter notebook analysis into an interactive dashboard with Quarto Dashboard."
+image: thumbnail.png
 listing-item:
   extra:
     event: "PyData Paris 2024"
     when: "Sep 25, 2024"
 ---
 
-[[Slides](https://cderv.github.io/pydata-paris-2024-quarto-dashboard/) · [Video](https://www.youtube.com/watch?v=7Bw-Dg_xAos)]{.gw-talk-links}
+At [PyData Paris 2024](https://pretalx.com/pydata-paris-2024/talk/XKGQXH/), September 25, 2024. How Quarto works with Jupyter, and how to turn a notebook analysis into an interactive dashboard: layout, customization, interactive elements.
+
+[[Slides](https://cderv.dev/pydata-paris-2024-quarto-dashboard/) · [Video](https://www.youtube.com/watch?v=7Bw-Dg_xAos) · [Talk page](https://pretalx.com/pydata-paris-2024/talk/XKGQXH/) · [Code](https://github.com/cderv/pydata-paris-2024-quarto-dashboard)]{.gw-talk-links}
 
 ## Slides
 
 ```{=html}
-<div class="gw-embed"><iframe src="https://cderv.github.io/pydata-paris-2024-quarto-dashboard/" title="Slides" loading="lazy" allowfullscreen></iframe></div>
+<div class="gw-embed"><iframe src="https://cderv.dev/pydata-paris-2024-quarto-dashboard/" title="Slides" loading="lazy" allowfullscreen></iframe></div>
 ```
 
 ## Video

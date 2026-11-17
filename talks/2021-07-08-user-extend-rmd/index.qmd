@@ -2,6 +2,7 @@
 title: "Extend the functionality of your R Markdown document"
 subtitle: "useR! 2021, online"
 date: 2021-07-08
+image: thumbnail.png
 description: "A talk about R Markdown Cookbook given online at useR!2021"
 aliases:
   - /talk/2021-user-extend-rmd/
@@ -12,7 +13,9 @@ listing-item:
     summary: "A talk about R Markdown Cookbook given online at useR!2021"
 ---
 
-[[Slides](https://user2021-enhanced-rmd.netlify.app/) · [Video](https://www.youtube.com/watch?v=tR7sNOPq9-I&t=1860s)]{.gw-talk-links}
+At [useR! 2021](https://user2021.r-project.org/), online. The talk builds on a simple report and adds recipes one by one; both versions of the report are in the repository.
+
+[[Slides](https://user2021-enhanced-rmd.netlify.app/) · [Code](https://github.com/cderv/user2021-extend-Rmd) · [Video](https://www.youtube.com/watch?v=tR7sNOPq9-I&t=1860s)]{.gw-talk-links}
 
 ## Slides
 

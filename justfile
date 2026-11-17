@@ -32,3 +32,10 @@ theme-update:
 [group('theme')]
 theme-dev:
     q2 add ../quarto-ghostwriter --force
+
+# === talks ===
+
+# Screenshot talk thumbnails (talks/<folder>/thumbnail.png); args: [folders...] [--force] [--url URL]
+[group('talks')]
+thumbnails *args:
+    uv run _scripts/talk-thumbnails.py {{args}}
