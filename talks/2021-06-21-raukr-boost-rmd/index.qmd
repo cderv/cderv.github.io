@@ -12,7 +12,9 @@ listing-item:
     summary: "A talk about some recipes of the R Markdown Cookbook given online at raukr 2021"
 ---
 
-[[Slides](https://raukr-boost-rmd-skills.netlify.app/)]{.gw-talk-links}
+Online lecture at [RaukR 2021](https://nbisweden.github.io/workshop-RaukR-2106/), the Advanced R for Bioinformatics summer school. The repository has a demo report with the recipes shown in the talk.
+
+[[Slides](https://raukr-boost-rmd-skills.netlify.app/) · [Code](https://github.com/cderv/raukr-2021-rmd-boost)]{.gw-talk-links}
 
 ## Slides
 

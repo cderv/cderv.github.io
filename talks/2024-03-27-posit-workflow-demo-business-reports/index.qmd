@@ -2,6 +2,7 @@
 title: "How to build business reports with Quarto"
 subtitle: "Posit Workflow Demo (monthly Posit webinar)"
 date: 2024-03-27
+image: https://i.ytimg.com/vi/Hl9TvhlzfV4/hqdefault.jpg
 listing-item:
   extra:
     event: "Posit Workflow Demo (monthly Posit webinar)"

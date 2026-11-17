@@ -1,17 +1,18 @@
 ---
 title: "Headless chrome automation with R"
-subtitle: "useR! 2019"
+subtitle: "useR! 2019, Toulouse"
 date: 2019-07-12
+description: "Lightning talk on crrri, an R package to drive headless Chrome through the Chrome DevTools Protocol."
 listing-item:
   extra:
-    event: "useR! 2019"
+    event: "useR! 2019, Toulouse"
     when: "Jul 12, 2019"
     kind: "Lightning talk"
 ---
 
-Lightning talk.
+Lightning talk at [useR! 2019](https://user2019.r-project.org/), Toulouse. It presents [crrri](https://github.com/RLesur/crrri), an R package to orchestrate headless Chrome with the Chrome DevTools Protocol, developed with Romain Lesur.
 
-[[Slides](https://cderv.gitlab.io/user2019-crrri/)]{.gw-talk-links}
+[[Slides](https://cderv.gitlab.io/user2019-crrri/) · [Slides (PDF, useR! site)](https://user2019.r-project.org/static/pres/lt257794.pdf) · [crrri](https://github.com/RLesur/crrri)]{.gw-talk-links}
 
 ## Slides
 

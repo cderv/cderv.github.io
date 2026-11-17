@@ -1,0 +1,23 @@
+---
+title: "Introducing Quarto"
+subtitle: "RaukR 2025"
+date: 2025-06-10
+description: "An introduction to Quarto for R users, given at the RaukR 2025 summer school."
+image: thumbnail.png
+aliases:
+  - /talks/2025-06-01-raukr-introducing-quarto/
+listing-item:
+  extra:
+    event: "RaukR 2025"
+    when: "Jun 10, 2025"
+---
+
+Lecture at [RaukR 2025](https://nbisweden.github.io/raukr-2025/), the Advanced R for Bioinformatics summer school in Visby, Sweden.
+
+[[Slides](https://cderv.dev/raukr-2025-quarto/) · [Code](https://github.com/cderv/raukr-2025-quarto)]{.gw-talk-links}
+
+## Slides
+
+```{=html}
+<div class="gw-embed"><iframe src="https://cderv.dev/raukr-2025-quarto/" title="Slides" loading="lazy" allowfullscreen></iframe></div>
+```

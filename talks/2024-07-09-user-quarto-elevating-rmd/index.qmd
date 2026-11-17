@@ -1,0 +1,29 @@
+---
+title: "Quarto - Elevating Rmd for Advanced Publishing"
+subtitle: "useR! 2024, Salzburg"
+date: 2024-07-09
+description: "Quarto as the successor to R Markdown: what the 1.4 release adds for figures, tables, projects and publishing, and when to switch."
+image: thumbnail.png
+aliases:
+  - /talks/2024-07-10-user-quarto-elevating-rmd/
+listing-item:
+  extra:
+    event: "useR! 2024, Salzburg"
+    when: "Jul 9, 2024"
+---
+
+At [useR! 2024](https://userconf2024.sched.com/event/1c8xG/venue/Salzburg+II), Salzburg, Tuesday, July 9, 2024.
+
+[[Slides](https://cderv.dev/user2024-quarto-talk/) · [Video](https://www.youtube.com/watch?v=8qR0wtJEDX4) · [Code](https://github.com/cderv/user2024-quarto-talk)]{.gw-talk-links}
+
+## Slides
+
+```{=html}
+<div class="gw-embed"><iframe src="https://cderv.dev/user2024-quarto-talk/" title="Slides" loading="lazy" allowfullscreen></iframe></div>
+```
+
+## Video
+
+```{=html}
+<div class="gw-embed"><iframe src="https://www.youtube-nocookie.com/embed/8qR0wtJEDX4" title="Video" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+```

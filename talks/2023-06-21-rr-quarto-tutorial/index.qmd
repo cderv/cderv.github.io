@@ -1,0 +1,20 @@
+---
+title: "Tutoriel Quarto"
+subtitle: "Rencontres R 2023, Avignon"
+date: 2023-06-21
+description: "Tutoriel d'introduction à Quarto aux Rencontres R 2023 : ce qu'est Quarto, le passage depuis R Markdown, les projets."
+aliases:
+  - /talks/2023-06-01-rr-quarto-tutorial/
+listing-item:
+  extra:
+    event: "Rencontres R 2023, Avignon"
+    when: "Jun 21, 2023"
+    kind: "Tutorial"
+    language: "in French"
+---
+
+Tutorial. In French.
+
+At the [Rencontres R 2023](https://rr2023.sciencesconf.org/), Avignon, Wednesday, June 21, 2023, 10:00–12:00. An introduction to Quarto in three parts: what Quarto is, moving from R Markdown to Quarto, and Quarto projects. The site has the slides, the exercises and their solutions.
+
+[[Materials](https://cderv.quarto.pub/tuto-quarto-rr2023) · [Code](https://github.com/cderv/tuto-quarto-rr-2023)]{.gw-talk-links}

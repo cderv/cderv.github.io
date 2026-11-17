@@ -1,0 +1,32 @@
+---
+title: "Se démarquer avec les thèmes HTML Quarto"
+subtitle: "Rencontres R 2023, Avignon"
+date: 2023-06-21
+description: "Personnaliser ses documents HTML Quarto : thèmes Bootswatch, mode clair et sombre, fichiers de thème SCSS."
+image: thumbnail.png
+aliases:
+  - /talks/2023-06-02-rr-quarto-html-theming/
+listing-item:
+  extra:
+    event: "Rencontres R 2023, Avignon"
+    when: "Jun 21, 2023"
+    language: "in French"
+---
+
+In French.
+
+At the [Rencontres R 2023](https://rr2023.sciencesconf.org/), Avignon, Wednesday, June 21, 2023, in the Reporting session.
+
+[[Slides](https://cderv.dev/rr-2023-quarto-html-theming/) · [Video](https://www.youtube.com/watch?v=jX74EqLOPPA) · [Code](https://github.com/cderv/rr-2023-quarto-html-theming)]{.gw-talk-links}
+
+## Slides
+
+```{=html}
+<div class="gw-embed"><iframe src="https://cderv.dev/rr-2023-quarto-html-theming/" title="Slides" loading="lazy" allowfullscreen></iframe></div>
+```
+
+## Video
+
+```{=html}
+<div class="gw-embed"><iframe src="https://www.youtube-nocookie.com/embed/jX74EqLOPPA" title="Video" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+```
