@@ -48,7 +48,7 @@ Facts here must stay confirmed by Christophe (see the blog-post skill, "Facts ab
 
 [Dynamic documents for R, and the base of a family of output format packages.]{.gw-talk-summary}
 
-[Developer · R]{.gw-talk-meta}
+[Co-maintainer at Posit · R]{.gw-talk-meta}
 :::
 
 ::: {.gw-talk-item}
