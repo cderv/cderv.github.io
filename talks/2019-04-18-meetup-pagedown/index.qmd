@@ -8,12 +8,10 @@ listing-item:
     when: "Apr 18, 2019"
 ---
 
-<!-- Deck moves into this site under /presentations/ (see the presentations migration plan): update the links then. -->
-
-[[Slides](https://cderv.github.io/presentations/meetupr-pagedown)]{.gw-talk-links}
+[[Slides](/presentations/meetupr-pagedown/)]{.gw-talk-links}
 
 ## Slides
 
 ```{=html}
-<div class="gw-embed"><iframe src="https://cderv.github.io/presentations/meetupr-pagedown" title="Slides" loading="lazy" allowfullscreen></iframe></div>
+<div class="gw-embed"><iframe src="/presentations/meetupr-pagedown/" title="Slides" loading="lazy" allowfullscreen></iframe></div>
 ```

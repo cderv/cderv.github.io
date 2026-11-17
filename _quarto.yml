@@ -1,5 +1,8 @@
 project:
   type: ghostwriter
+  # Decks and redirect pages moved from cderv/presentations (old GitHub Pages site).
+  resources:
+    - presentations/
 
 website:
   title: "Christophe Dervieux"
