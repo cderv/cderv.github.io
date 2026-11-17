@@ -9,7 +9,7 @@ listing-item:
     kind: "Tutorial"
 ---
 
-Tutorial. With François Michonneau and Mine Çetinkaya-Rundel.
+Tutorial with François Michonneau and Mine Çetinkaya-Rundel. I present a 20-minute part of it.
 
 At [uRos 2026](https://r-project.ro/conference2026.html), the 14th International Conference on the Use of R in Official Statistics, Paris, November 18–20, 2026, hosted by INSEE. Tutorial day, Wednesday, November 18, 09:00–10:30 ([programme](https://raw.githubusercontent.com/uRosConf/programme2026/main/uros2026_programme.pdf)).
 
