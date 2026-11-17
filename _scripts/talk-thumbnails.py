@@ -9,8 +9,10 @@ The picture is saved as talks/<folder>/thumbnail.png and used as the page's
 front matter when it is missing.
 
 Which URL: the first link labelled Slides, Materials or Workshop site in the
-page's `{.gw-talk-links}` line, unless --url is given. Speaker Deck, YouTube
-and PDF links are skipped (no useful screenshot).
+page's `{.gw-talk-links}` line, unless --url is given. Speaker Deck, YouTube,
+GitHub and PDF links are skipped (no useful screenshot), and so are pages
+whose `image:` is something else than thumbnail.png (a video thumbnail, say).
+Links starting with / are read against the site-url of _quarto.yml.
 
 Usage (from the root of the site):
 
@@ -34,20 +36,32 @@ from playwright.sync_api import sync_playwright
 
 WIDTH, HEIGHT = 1200, 630
 LABELS = ("Slides", "Materials", "Workshop site")
-SKIP = ("speakerdeck.com", "youtube.com", "youtu.be", ".pdf")
+SKIP = ("speakerdeck.com", "youtube.com", "youtu.be", "github.com", ".pdf")
 TALKS = Path("talks")
 
 
 def links(qmd: str) -> list[tuple[str, str]]:
     line = next((l for l in qmd.splitlines() if "{.gw-talk-links}" in l), "")
-    return re.findall(r"\[([^\[\]]+)\]\((https?://[^)\s]+)\)", line)
+    return re.findall(r"\[([^\[\]]+)\]\(((?:https?://|/)[^)\s]+)\)", line)
+
+
+def site_url() -> str:
+    m = re.search(r"^\s*site-url:\s*(\S+)", Path("_quarto.yml").read_text(encoding="utf-8"), re.M)
+    return m.group(1).strip("\"'").rstrip("/") if m else ""
 
 
 def pick_url(qmd: str) -> str | None:
     for label, url in links(qmd):
         if label in LABELS and not any(s in url for s in SKIP):
-            return url
+            return site_url() + url if url.startswith("/") else url
     return None
+
+
+def other_image(qmd: str) -> str | None:
+    m = re.match(r"---\r?\n(.*?)\r?\n---", qmd, re.S)
+    img = re.search(r"^image:\s*(.+)$", m.group(1), re.M) if m else None
+    value = img.group(1).strip().strip("\"'") if img else None
+    return value if value and value != "thumbnail.png" else None
 
 
 def ensure_image_field(path: Path) -> bool:
@@ -98,15 +112,23 @@ def main() -> None:
             if out.exists() and not args.force:
                 print(f"skip {folder.name}: thumbnail.png exists (--force to replace)")
                 continue
-            url = args.url or pick_url(qmd.read_text(encoding="utf-8"))
+            text = qmd.read_text(encoding="utf-8")
+            if other_image(text) and not args.url:
+                print(f"skip {folder.name}: image: is {other_image(text)} (--url to override)")
+                continue
+            url = args.url or pick_url(text)
             if not url:
                 print(f"skip {folder.name}: no Slides/Materials/Workshop site link")
                 continue
             try:
                 page.goto(url, wait_until="load", timeout=30_000)
-            except PlaywrightError as e:
-                print(f"FAIL {folder.name}: {url}: {e.message.splitlines()[0]}")
-                continue
+            except PlaywrightError:
+                # Slow page (a stuck font or script): retry without waiting for every resource.
+                try:
+                    page.goto(url, wait_until="domcontentloaded", timeout=60_000)
+                except PlaywrightError as e:
+                    print(f"FAIL {folder.name}: {url}: {e.message.splitlines()[0]}")
+                    continue
             page.wait_for_timeout(args.wait * 1000)
             page.screenshot(path=out)
             added = " (image: added to front matter)" if ensure_image_field(qmd) else ""
