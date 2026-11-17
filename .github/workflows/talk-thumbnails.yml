@@ -1,0 +1,53 @@
+name: Talk thumbnails
+
+# Takes the missing talk thumbnails (talks/<folder>/thumbnail.png) with
+# _scripts/talk-thumbnails.py and commits them to the branch.
+# Runs on branches that change a talk page, and by hand from the Actions tab
+# (inputs: talk folders and --force, for instance "2026-06-17-rr-quarto-lua --force").
+
+on:
+  push:
+    branches-ignore: [main]
+    paths:
+      - "talks/**/index.qmd"
+      - "_scripts/talk-thumbnails.py"
+  workflow_dispatch:
+    inputs:
+      args:
+        description: "Arguments for the script (folders, --force, --url URL)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: talk-thumbnails-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  thumbnails:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+
+      # The runner has Google Chrome, which the script uses first.
+      - name: Take thumbnails
+        env:
+          ARGS: ${{ inputs.args }}
+        # $ARGS is split on spaces on purpose (several arguments).
+        run: uv run _scripts/talk-thumbnails.py $ARGS
+
+      - name: Commit new thumbnails
+        run: |
+          git add talks
+          if git diff --cached --quiet; then
+            echo "No new thumbnail."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update talk thumbnails"
+          git push
