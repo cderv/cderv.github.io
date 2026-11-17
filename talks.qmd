@@ -5,6 +5,8 @@ aliases:
   # Old Hugo site (permalink `talk: /talk/:filename/`). The old per-talk URLs
   # are aliases on each talk page under talks/.
   - /talk/
+  # Old index of the cderv/presentations GitHub Pages site
+  - /presentations/
 listing:
   - id: talks-2026
     type: custom
