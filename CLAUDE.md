@@ -9,7 +9,7 @@ The look of the site (layout, listings, talks page, blog page, footer, dark mode
 So a change to how a page looks is usually a change to the extension:
 
 - Edit the copy here so the site PR works on its own, and say so in the PR.
-- Open an issue (or a PR) on cderv/quarto-ghostwriter to carry the same change there. Otherwise the next `just theme-update` erases it.
+- Open an issue (or a PR) on cderv/quarto-ghostwriter to carry the same change there. Otherwise the next `just theme-update` erases it. That change bumps the patch number in the extension's `_extension.yml` (`0.1.z`) and adds a line to its `CHANGELOG.md`; no GitHub release.
 - Keep site-only things out of the extension: navbar, footer text, listing options in `index.qmd` and `talks.qmd`, and the pages themselves.
 
 Templates and classes from the extension used by the site: `talks.template` and `.gw-talks` (talks.qmd), `feed.template` and `.gw-years` (blog in index.qmd, grouped by year).
