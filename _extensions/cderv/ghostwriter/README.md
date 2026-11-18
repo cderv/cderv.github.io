@@ -73,6 +73,7 @@ project types it did find.
 | `design-a.scss` | The default variant, layered after `ghostwriter.scss`. Changes the palette and fonts (petrol accent, system font stack, no Google Fonts request), sets titles in sentence case, underlines links, and recolors the dark-mode toggle. |
 | `design-a-dark.scss` | Dark palette for the default variant. Only variables, layered last in the dark theme. |
 | `talks.template` | Optional listing template for a page of talks; see [Talks listing](#talks-listing). |
+| `feed.template` | Empty listing template, for a listing that only produces the RSS feed; see [Posts grouped by year](#posts-grouped-by-year). |
 | `LICENSE` | MIT license for this extension. |
 | `LICENSE-ghostwriter.md` | MIT notice of the original Ghostwriter theme. |
 
@@ -231,6 +232,41 @@ installed. Wrap the year sections in `::: {.gw-talks}` for the section
 spacing. Talk pages can embed slides or a video in a 16:9 box with a
 raw-HTML `<div class="gw-embed"><iframe ...></iframe></div>`.
 
+## Posts grouped by year
+
+To show the blog with one section per year, give each year its own listing
+and wrap the sections in `::: {.gw-years}` (same headings as the talks page):
+
+```yaml
+listing:
+  - contents: posts
+    type: custom
+    template: !str /_extensions/cderv/ghostwriter/feed.template
+    feed: true
+    sort: "date desc"
+  - id: posts-2022
+    contents: "posts/2022-*/index.qmd"
+    type: default
+    fields: [title, date]
+    sort: "date desc"
+```
+
+```markdown
+::: {.gw-years}
+
+## 2022
+
+::: {#posts-2022}
+:::
+
+:::
+```
+
+The first listing keeps the RSS feed whole. q2 writes one feed per listing
+that sets `feed: true`, named `index-<id>.xml` when the listing has an id, so
+per-year feeds would replace `index.xml`. This listing has no id, lists every
+post, and renders nothing with `feed.template`.
+
 ## Limits
 
 - The theme has no styles for banner title blocks. Keep `title-block-banner`
@@ -248,8 +284,8 @@ from that site:
 
 - **Generic**: the project type, both looks, dark mode, the footer classes,
   the post list and every rule in the SCSS files except the talks section.
-- **Added for that site, usable elsewhere**: `talks.template`, the
-  `.gw-talks`, `.gw-talk-*` and `.gw-embed` styles (the "Talks" section of
+- **Added for that site, usable elsewhere**: `talks.template`,
+  `feed.template`, the `.gw-talks`, `.gw-years`, `.gw-talk-*` and `.gw-embed` styles (the "Talks" section of
   `ghostwriter.scss`). A site without a talks page simply does not use them.
 - **Kept in the site, not in the extension**: the site title, navbar, the
   footer text with the copyright line, the listing options in `index.qmd` and
