@@ -13,30 +13,30 @@ listing:
   - id: posts-2022
     contents: "posts/2022-*/index.qmd"
     type: default
-    fields: [title, date]
+    fields: [title, date, categories]
     date-format: "ddd, MMM D, YYYY"
-    categories: false
+    categories: true
     sort: "date desc"
   - id: posts-2021
     contents: "posts/2021-*/index.qmd"
     type: default
-    fields: [title, date]
+    fields: [title, date, categories]
     date-format: "ddd, MMM D, YYYY"
-    categories: false
+    categories: true
     sort: "date desc"
   - id: posts-2018
     contents: "posts/2018-*/index.qmd"
     type: default
-    fields: [title, date]
+    fields: [title, date, categories]
     date-format: "ddd, MMM D, YYYY"
-    categories: false
+    categories: true
     sort: "date desc"
   - id: posts-2016
     contents: "posts/2016-*/index.qmd"
     type: default
-    fields: [title, date]
+    fields: [title, date, categories]
     date-format: "ddd, MMM D, YYYY"
-    categories: false
+    categories: true
     sort: "date desc"
 ---
 

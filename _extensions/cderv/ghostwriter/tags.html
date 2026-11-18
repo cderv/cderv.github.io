@@ -1,0 +1,66 @@
+<script>
+// Ghostwriter: clickable tags (post categories).
+// - On a post, each tag of the title block links to the blog listing
+//   (index.html at the site root) filtered on that tag: index.html#category=R.
+// - On a listing page with `categories: true`, the category list moves from
+//   the margin to a row of tags under the page title.
+// The filtering itself is done by q2's listing script (quarto-listing.js).
+(function () {
+  function siteOffset() {
+    var meta = document.querySelector('meta[name="quarto:offset"]');
+    return meta ? meta.getAttribute("content") : "";
+  }
+
+  function linkTitleTags() {
+    if (document.querySelector(".quarto-listing")) return;
+    var tags = document.querySelectorAll(
+      "header.quarto-title-block .quarto-category"
+    );
+    var listing = siteOffset() + "index.html";
+    tags.forEach(function (tag) {
+      var name = tag.textContent.trim();
+      if (!name || tag.querySelector("a")) return;
+      var link = document.createElement("a");
+      link.href = listing + "#category=" + encodeURIComponent(name);
+      link.textContent = name;
+      tag.replaceChildren(link);
+    });
+  }
+
+  function moveTagFilter() {
+    var sidebar = document.getElementById("quarto-margin-sidebar");
+    var filter = sidebar && sidebar.querySelector(".quarto-listing-category");
+    var header = document.getElementById("title-block-header");
+    if (!filter || !header) return;
+    filter.classList.add("gw-tag-filter");
+    filter.setAttribute("role", "navigation");
+    filter.setAttribute("aria-label", "Filter posts by tag");
+    header.after(filter);
+    var title = sidebar.querySelector(".quarto-listing-category-title");
+    if (title) title.remove();
+    if (!sidebar.querySelector("*")) sidebar.classList.add("gw-empty");
+  }
+
+  // q2 renders listing tags as <div onclick>: make them reachable by keyboard.
+  function tagsAsButtons() {
+    document
+      .querySelectorAll(".listing-category, .quarto-listing-category .category")
+      .forEach(function (el) {
+        el.setAttribute("role", "button");
+        el.setAttribute("tabindex", "0");
+        el.addEventListener("keydown", function (event) {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            el.click();
+          }
+        });
+      });
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    linkTitleTags();
+    moveTagFilter();
+    tagsAsButtons();
+  });
+})();
+</script>
