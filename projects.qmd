@@ -3,7 +3,8 @@ title: "Projects"
 subtitle: "What I work on, maintain or contribute to."
 # One custom listing per section, with inline records rendered by
 # _templates/projects.template (fields documented there).
-# Hex stickers: https://github.com/rstudio/hex-stickers (`thumbs/`), saved in images/projects/.
+# Hex stickers: https://github.com/rstudio/hex-stickers (`thumbs/`, CC0), saved in images/projects/.
+# The Cookbook cover is linked from the book site, not copied (publisher copyright).
 # Facts here must stay confirmed by Christophe (see the blog-post skill, "Facts about Chris").
 listing:
   - id: projects-quarto
@@ -71,7 +72,7 @@ listing:
         meta: "Author and maintainer at Posit · R"
       - title: R Markdown Cookbook
         href: https://pkg.yihui.org/rmarkdown-cookbook/
-        logo: images/projects/rmarkdown-cookbook.png
+        logo: https://pkg.yihui.org/rmarkdown-cookbook/images/cover.png
         logo-shape: cover
         badge: Book
         summary: "Short, practical recipes for R Markdown, co-written with Yihui Xie and Emily Riederer (2020)."
