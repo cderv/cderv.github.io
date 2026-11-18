@@ -604,7 +604,8 @@ main.content {
 // summary, "date · event" line). Dotted separators and a whole-row link,
 // like the post list. Talk pages: links row and 16:9 embeds.
 
-main.content .gw-talks {
+main.content .gw-talks,
+main.content .gw-years {
   h2 {
     margin: 40px 0 0;
     padding-bottom: 8px;

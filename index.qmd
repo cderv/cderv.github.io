@@ -2,13 +2,72 @@
 title: "Blog"
 subtitle: "Notes on Quarto, R Markdown, and working with AI agents."
 listing:
-  contents: posts
-  feed: true
-  sort: "date desc"
-  type: default
-  fields: [title, date]
-  date-format: "ddd, MMM D, YYYY"
-  categories: false
-  sort-ui: false
-  filter-ui: false
+  # Feed only: lists every post for index.xml and renders nothing on the page.
+  # It has no id on purpose: q2 names the feed after the listing id
+  # (index-<id>.xml), and the navbar links index.xml.
+  - contents: posts
+    type: custom
+    template: !str /_extensions/cderv/ghostwriter/feed.template
+    feed: true
+    sort: "date desc"
+  - id: posts-2022
+    contents: "posts/2022-*/index.qmd"
+    type: default
+    fields: [title, date]
+    date-format: "ddd, MMM D, YYYY"
+    categories: false
+    sort: "date desc"
+  - id: posts-2021
+    contents: "posts/2021-*/index.qmd"
+    type: default
+    fields: [title, date]
+    date-format: "ddd, MMM D, YYYY"
+    categories: false
+    sort: "date desc"
+  - id: posts-2018
+    contents: "posts/2018-*/index.qmd"
+    type: default
+    fields: [title, date]
+    date-format: "ddd, MMM D, YYYY"
+    categories: false
+    sort: "date desc"
+  - id: posts-2016
+    contents: "posts/2016-*/index.qmd"
+    type: default
+    fields: [title, date]
+    date-format: "ddd, MMM D, YYYY"
+    categories: false
+    sort: "date desc"
 ---
+
+<!--
+Posts are grouped by year, like talks.qmd. A new post goes in
+posts/YYYY-MM-DD-slug/; the listing for its year picks it up. For a new
+year, add a listing entry above and a section below.
+2017 has only a draft (posts/2017-07-13-parsing-curl-command): add its
+section when the post is published.
+-->
+
+::: {.gw-years}
+
+## 2022
+
+::: {#posts-2022}
+:::
+
+## 2021
+
+::: {#posts-2021}
+:::
+
+## 2018
+
+::: {#posts-2018}
+:::
+
+## 2016
+
+::: {#posts-2016}
+:::
+
+:::
