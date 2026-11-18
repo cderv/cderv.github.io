@@ -70,8 +70,8 @@ $enable-shadows: false !default;
   border-radius: 0;
 }
 
-// A tag: small outlined label in the accent color, "#" prefix, filled on
-// hover. Used for post tags, listing tags and the tag filter.
+// A tag: small outlined label in the accent color, filled on hover. Used
+// for post tags, listing tags and the tag filter.
 @mixin gw-tag {
   position: relative;
   display: inline-flex;
@@ -93,12 +93,6 @@ $enable-shadows: false !default;
   cursor: pointer;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
     color 0.15s ease-in-out;
-
-  &::before {
-    content: "#";
-    font-weight: 400;
-    opacity: 0.6;
-  }
 
   &:hover,
   &:focus-visible,
@@ -976,10 +970,6 @@ main.content a.gw-talk-title {
 
   .category {
     @include gw-tag;
-
-    &[data-category=""]::before {
-      content: none;
-    }
   }
 
   .quarto-category-count {
