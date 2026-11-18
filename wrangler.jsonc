@@ -1,0 +1,12 @@
+// Cloudflare Worker used only for PR previews of the site (see
+// .github/workflows/publish.yml). Assets only, no Worker script.
+// Production stays on GitHub Pages.
+{
+  "name": "cderv-dev-preview",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./_site"
+  },
+  // Required by `wrangler preview`; empty means the defaults.
+  "previews": {}
+}
