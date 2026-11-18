@@ -734,6 +734,72 @@ main.content a.gw-talk-title {
   }
 }
 
+// ---------------------------------------------------------------- Projects
+// projects.template: the talk list layout with a logo column on the left.
+// A logo is an image (hex sticker, logo; `.gw-project-round` for a round
+// one, `.gw-project-cover` for a book cover) or a Bootstrap icon in a
+// hexagon tile (`.gw-project-icon`).
+
+.gw-talk-item.gw-project {
+  padding-left: 88px;
+  min-height: 96px;
+
+  &:hover,
+  &:focus-within {
+    padding-left: 92px;
+  }
+}
+
+.gw-project .gw-project-logo {
+  position: absolute;
+  left: 8px;
+  top: 16px;
+  width: 60px;
+  height: 69px;
+  object-fit: contain;
+  margin: 0;
+}
+
+.gw-project .gw-project-round {
+  width: 56px;
+  height: 56px;
+  left: 10px;
+  top: 22px;
+}
+
+.gw-project .gw-project-cover {
+  height: 80px;
+  top: 14px;
+}
+
+.gw-project .gw-project-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  background: $gw-primary;
+  color: $gw-on-primary;
+  font-size: 26px;
+}
+
+@media (max-width: 600px) {
+  .gw-talk-item.gw-project,
+  .gw-talk-item.gw-project:hover,
+  .gw-talk-item.gw-project:focus-within {
+    padding-left: 72px;
+  }
+
+  .gw-project .gw-project-logo {
+    width: 48px;
+    height: 55px;
+  }
+
+  .gw-project .gw-project-round {
+    width: 44px;
+    height: 44px;
+  }
+}
+
 // ---------------------------------------------------------------- Post list
 // "Title / Published Mon, Apr 25, 2022", dotted separators, whole row
 // clickable.

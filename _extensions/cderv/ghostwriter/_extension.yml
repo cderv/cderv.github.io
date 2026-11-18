@@ -1,6 +1,6 @@
 title: Ghostwriter
 author: Christophe Dervieux
-version: 0.1.0
+version: 0.1.1
 contributes:
   # Custom project type, named after this extension's directory.
   # Use it with `project: type: ghostwriter` in _quarto.yml.

@@ -1,0 +1,23 @@
+/*-- scss:defaults --*/
+// Site-specific styles, layered after the Ghostwriter extension's theme
+// (light and dark), so the $gw-* palette variables are available here.
+
+/*-- scss:rules --*/
+
+// About page portrait.
+img.gw-about-photo {
+  float: right;
+  width: 168px;
+  height: 168px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 4px 0 16px 28px;
+}
+
+@include media-breakpoint-down(sm) {
+  img.gw-about-photo {
+    float: none;
+    display: block;
+    margin: 0 auto 20px;
+  }
+}

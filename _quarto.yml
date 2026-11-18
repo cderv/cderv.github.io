@@ -1,8 +1,12 @@
 project:
   type: ghostwriter
-  # Decks and redirect pages moved from cderv/presentations (old GitHub Pages site).
   resources:
+    # Decks and redirect pages moved from cderv/presentations (old GitHub Pages site).
     - presentations/
+    # Default link preview image, used by _scripts/opengraph.js.
+    - images/social-card.png
+  # q2 does not write Open Graph tags yet: added after the render.
+  post-render: _scripts/opengraph.js
 
 website:
   title: "Christophe Dervieux"
@@ -14,6 +18,8 @@ website:
         href: index.qmd
       - text: Talks
         href: talks.qmd
+      - text: Projects
+        href: projects.qmd
       - text: About
         href: about.qmd
     right:
@@ -26,3 +32,10 @@ website:
       [[Christophe Dervieux](/index.html){.gw-footer-title} [↑](#){.gw-top aria-label="Back to top"}]{.gw-footer-brand}
       [© 2026 Christophe Dervieux / Built with [Quarto](https://quarto.org)]{.gw-footer-line}
       [Layout inspired by the [Ghostwriter theme](https://github.com/roryg/ghostwriter) by JollyGoodThemes]{.gw-footer-line}
+
+format:
+  html:
+    # Added after the extension's theme files (lists combine).
+    theme:
+      light: [styles/site.scss]
+      dark: [styles/site.scss]
