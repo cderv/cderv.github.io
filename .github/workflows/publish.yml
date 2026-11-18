@@ -114,15 +114,12 @@ jobs:
         id: preview
         if: steps.check.outputs.enabled == 'true'
         run: |
-          set -o pipefail
-          if ! output="$(npx --yes wrangler@4 preview --name "$PREVIEW_NAME" --message "${{ github.event.pull_request.head.sha }}" --json)"; then
-            printf '%s\n' "$output"
-            # wrangler writes its full error to a log file in --json mode
-            cat "$HOME"/.wrangler/logs/*.log 2>/dev/null | tail -n 80 || true
-            exit 1
-          fi
-          printf '%s\n' "$output"
-          preview_url="$(printf '%s' "$output" | jq -er '.preview.urls[0]')"
+          # wrangler mixes upload progress with --json on stdout, so read the
+          # URL from its structured output file (one JSON object per line).
+          export WRANGLER_OUTPUT_FILE_PATH="$RUNNER_TEMP/wrangler-output.json"
+          npx --yes wrangler@4 preview --name "$PREVIEW_NAME" --message "${{ github.event.pull_request.head.sha }}"
+          preview_url="$(jq -r 'select(.type == "preview") | .preview_urls[0]' "$WRANGLER_OUTPUT_FILE_PATH" | tail -n 1)"
+          test -n "$preview_url" && test "$preview_url" != null
           echo "url=$preview_url" >> "$GITHUB_OUTPUT"
 
       - name: Comment the preview link on the PR
