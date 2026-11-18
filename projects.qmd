@@ -2,14 +2,14 @@
 title: "Projects"
 subtitle: "What I work on, maintain or contribute to."
 # One custom listing per section, with inline records rendered by
-# _templates/projects.template (fields documented there).
+# the Ghostwriter extension's projects.template (fields documented there).
 # Hex stickers: https://github.com/rstudio/hex-stickers (`thumbs/`, CC0), saved in images/projects/.
 # The Cookbook cover is linked from the book site, not copied (publisher copyright).
 # Facts here must stay confirmed by Christophe (see the blog-post skill, "Facts about Chris").
 listing:
   - id: projects-quarto
     type: custom
-    template: !str _templates/projects.template
+    template: !str /_extensions/cderv/ghostwriter/projects.template
     contents:
       - title: quarto-cli
         href: https://github.com/quarto-dev/quarto-cli
@@ -32,7 +32,7 @@ listing:
         meta: "Maintainer at Posit · R"
   - id: projects-rmarkdown
     type: custom
-    template: !str _templates/projects.template
+    template: !str /_extensions/cderv/ghostwriter/projects.template
     contents:
       - title: rmarkdown
         href: https://github.com/rstudio/rmarkdown
@@ -79,7 +79,7 @@ listing:
         meta: "Co-author · Chapman & Hall/CRC, free online"
   - id: projects-agents
     type: custom
-    template: !str _templates/projects.template
+    template: !str /_extensions/cderv/ghostwriter/projects.template
     contents:
       - title: sandbox-cloud-setup
         href: https://github.com/cderv/sandbox-cloud-setup
@@ -93,7 +93,7 @@ listing:
         meta: "Author · Scoop manifests"
   - id: projects-earlier
     type: custom
-    template: !str _templates/projects.template
+    template: !str /_extensions/cderv/ghostwriter/projects.template
     contents:
       - title: opendatarte
         href: https://github.com/cderv/opendatarte

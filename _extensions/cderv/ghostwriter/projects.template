@@ -1,12 +1,12 @@
 $-- Project list for a `type: custom` listing with inline records
-$-- (projects.qmd). Fields of each record:
+$-- (in the listing's `contents:`). Fields of each record:
 $--   title, href       required
 $--   logo              image path (hex sticker, logo), or
 $--   icon              a Bootstrap icon name, shown in a hexagon tile
 $--   logo-shape        `round` or `cover`
 $--   badge             small boxed label after the title
 $--   summary, meta     description line and grey role · language line
-$-- Styles: styles/site.scss (.gw-project) on top of the talk list styles.
+$-- Styles: the "Projects" section of ghostwriter.scss, on top of the talk list.
 ::: {.list .gw-talk-list}
 $for(items)$
 ::: {.gw-talk-item .gw-project}
