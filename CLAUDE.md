@@ -12,7 +12,7 @@ So a change to how a page looks is usually a change to the extension:
 - Open an issue (or a PR) on cderv/quarto-ghostwriter to carry the same change there. Otherwise the next `just theme-update` erases it. That change bumps the patch number in the extension's `_extension.yml` (`0.1.z`) and adds a line to its `CHANGELOG.md`; no GitHub release.
 - Keep site-only things out of the extension: navbar, footer text, listing options in `index.qmd` and `talks.qmd`, and the pages themselves.
 
-Templates and classes from the extension used by the site: `talks.template` and `.gw-talks` (talks.qmd), `feed.template` and `.gw-years` (blog in index.qmd, grouped by year).
+Templates and classes from the extension used by the site: `talks.template` and `.gw-talks` (talks.qmd), `feed.template` and `.gw-years` (blog in index.qmd, grouped by year), `tags.html` (clickable tags; `categories: true` on the blog listings).
 
 ## Working rules
 

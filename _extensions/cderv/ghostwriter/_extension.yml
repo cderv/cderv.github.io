@@ -1,6 +1,6 @@
 title: Ghostwriter
 author: Christophe Dervieux
-version: 0.1.1
+version: 0.1.2
 contributes:
   # Custom project type, named after this extension's directory.
   # Use it with `project: type: ghostwriter` in _quarto.yml.
@@ -23,3 +23,5 @@ contributes:
         syntax-highlighting: github
         date-format: "ddd, MMM D, YYYY"
         title-block-banner: false
+        # Clickable tags: post tags link to the filtered blog listing.
+        include-after-body: tags.html
