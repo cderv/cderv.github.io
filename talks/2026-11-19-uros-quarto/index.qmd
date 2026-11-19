@@ -2,12 +2,12 @@
 title: "Reproducible Statistical Publications with Quarto"
 subtitle: "uRos 2026, Paris"
 date: 2026-11-19
+description: "One Quarto source for a statistical bulletin in HTML, PDF and Word: computed numbers, brand.yml, accessible PDF."
 image: thumbnail.png
 listing-item:
   extra:
     event: "uRos 2026, Paris"
     when: "Nov 19, 2026"
-    kind: "Upcoming"
 ---
 
 At [uRos 2026](https://r-project.ro/conference2026.html), the 14th International Conference on the Use of R in Official Statistics, Paris, November 18–20, 2026, hosted by INSEE at the Pierre Mendès France Conference Center. Session C1, Automated and Accessible Statistical Publishing, Thursday, November 19, 11:30–13:00 ([programme](https://raw.githubusercontent.com/uRosConf/programme2026/main/uros2026_programme.pdf)).
