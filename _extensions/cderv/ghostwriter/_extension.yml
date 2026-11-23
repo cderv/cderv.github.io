@@ -1,6 +1,6 @@
 title: Ghostwriter
 author: Christophe Dervieux
-version: 0.1.2
+version: 0.1.3
 contributes:
   # Custom project type, named after this extension's directory.
   # Use it with `project: type: ghostwriter` in _quarto.yml.
@@ -8,6 +8,10 @@ contributes:
     project:
       type: website
     website:
+      # Link preview tags (og:*, twitter:*); set website.image for pages
+      # without their own image.
+      open-graph: true
+      twitter-card: true
       # Default footer; a site replaces it by setting its own page-footer.
       page-footer:
         center: |
