@@ -3,15 +3,15 @@ project:
   resources:
     # Decks and redirect pages moved from cderv/presentations (old GitHub Pages site).
     - presentations/
-    # Default link preview image, used by _scripts/opengraph.js.
-    - images/social-card.png
-  # q2 does not write Open Graph tags yet: added after the render.
-  post-render: _scripts/opengraph.js
 
 website:
   title: "Christophe Dervieux"
   description: "Notes on Quarto, R Markdown, and working with AI agents."
   site-url: https://cderv.dev
+  # Link preview image for pages without their own image (Open Graph and
+  # Twitter card tags are turned on by the Ghostwriter extension).
+  image: images/social-card.png
+  image-alt: Christophe Dervieux
   navbar:
     left:
       - text: Blog
